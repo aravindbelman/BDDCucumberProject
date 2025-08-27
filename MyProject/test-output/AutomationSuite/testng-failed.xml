@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationSuite]">
+  <listeners>
+    <listener class-name="com.LegacyApplication.CustomListner.Listner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.ExecutionListner"/>
+  </listeners>
+  <test name="Smoke Test(failed)">
+    <classes>
+      <class name="com.LegacyApplication.SubmissionPage.TC003_VerifyGlApplicationInfo">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC003_VerifyGlApplicationInfo -->
+      <class name="com.LegacyApplication.SubmissionPage.TC004_VerifyGlRatingData">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC004_VerifyGlRatingData -->
+      <class name="com.LegacyApplication.SubmissionPage.TC008_VerifyCommonEligibilityInfo">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC008_VerifyCommonEligibilityInfo -->
+      <class name="com.LegacyApplication.SubmissionPage.TC007_VerifyPriceIndicationInfo">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="verify_priceindicator_information"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC007_VerifyPriceIndicationInfo -->
+      <class name="com.LegacyApplication.SubmissionPage.TC009_VerifySpecificPageInfo">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC009_VerifySpecificPageInfo -->
+      <class name="com.LegacyApplication.SubmissionPage.TC010_VerifyApplicationPageInfo">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC010_VerifyApplicationPageInfo -->
+      <class name="com.LegacyApplication.SubmissionPage.TC011_VerifySubmissionDetailsInformation">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="verify_sold_submission_details_information"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC011_VerifySubmissionDetailsInformation -->
+      <class name="com.LegacyApplication.LoginPage.TC002_LoginAsAdmin">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.LoginPage.TC002_LoginAsAdmin -->
+      <class name="com.LegacyApplication.SubmissionPage.TC006_VerifyOptionalCoverages">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC006_VerifyOptionalCoverages -->
+      <class name="com.LegacyApplication.LoginPage.TC001_LoginAsAgency">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.LoginPage.TC001_LoginAsAgency -->
+      <class name="com.LegacyApplication.SubmissionPage.TC005_VerifyHeaderTabs">
+        <methods>
+          <include name="aftertest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC005_VerifyHeaderTabs -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->
