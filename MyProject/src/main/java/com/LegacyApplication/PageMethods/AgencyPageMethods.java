@@ -21,7 +21,7 @@ import com.LegacyApplication.Utilities.GenericMethods;
 import com.LegacyApplication.Utilities.WaitMethods;
 
 public class AgencyPageMethods extends TestBase {
-	public static final Logger log=Logger.getLogger(AutoRenewalBrokerFeeMethods.class.getName());
+	public static final Logger log=Logger.getLogger(AgencyPageMethods.class.getName());
 	public static JavascriptExecutor js;
 	
 	/*

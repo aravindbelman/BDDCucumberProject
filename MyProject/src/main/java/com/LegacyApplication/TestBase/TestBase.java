@@ -7,10 +7,11 @@ import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Properties;
+import io.cucumber.java.en.Given;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.OutputType;
@@ -20,9 +21,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -36,7 +37,6 @@ import com.LegacyApplication.CustomListner.Listner;
 import com.LegacyApplication.ExcelReader.ExcelReader;
 import com.LegacyApplication.Locations.Locations;
 import com.LegacyApplication.Utilities.WaitMethods;
-import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -113,6 +113,7 @@ public class TestBase {
 	 * @param NA
 	 * @return NA
 	 */
+	@Given("Browser is Initialized")
 	public static void initialize_chrome(String url) throws IOException
 	{
 		load_data();
@@ -241,18 +242,14 @@ public class TestBase {
 		if(browser.equalsIgnoreCase("firefox"))
 		{
 			log.info("creating object of "+browser);
-			System.setProperty("webdriver.gecko.driver",Locations.geckoDriverPath);
-			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
-			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-			capabilities.setCapability("marionette", true);
-			capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.ACCEPT);
-			//capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.DISMISS);
-			/*FirefoxProfile ffprofile = new FirefoxProfile();
-			ffprofile.setPreference("dom.webnotifications.enabled", false);
-			driver = new FirefoxDriver(ffprofile);*/
-			driver = new FirefoxDriver(capabilities);
-			log.info("Firefox is Working Fine");
+			WebDriverManager.firefoxdriver().setup();
+			//System.setProperty("webdriver.gecko.driver",Locations.geckoDriverPath);
+			FirefoxOptions options = new FirefoxOptions();
+			options.setCapability("marionette", true);  // enable Marionette driver
+			options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT);
+			options.addPreference("dom.webnotifications.enabled", false);
+			driver = new FirefoxDriver(options);
+			log.info("Firefox is working fine");
 			driver.manage().window().maximize();
 			log.info("Firefox initialized successfully");
 		}
@@ -260,14 +257,14 @@ public class TestBase {
 		{
 			log.info("creating object of "+browser);
 			log.info("Chrome is Working Fine");
-			System.setProperty("webdriver.chrome.driver", Locations.chromeDriverPath);
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-			capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.ACCEPT);
-			//capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.DISMISS);
-			/*ChromeOptions options = new ChromeOptions();
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver", Locations.chromeDriverPath);
+			ChromeOptions options = new ChromeOptions();
+			options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT);
 			options.addArguments("--disable-notifications");
-			capabilities.merge((Capabilities) options);*/
-			driver= new ChromeDriver(capabilities);
+			options.addArguments("--start-maximized");
+
+			driver = new ChromeDriver(options);
 			log.info("Chrome initialized successfully");
 			driver.manage().window().maximize();
 		}
@@ -275,27 +272,41 @@ public class TestBase {
 		{
 			log.info("creating object of "+browser);
 			log.info("Internet Explorer is Working Fine");
-			System.setProperty("webdriver.ie.driver",Locations.IEDriverPath);
+			WebDriverManager.iedriver().setup();
+			//System.setProperty("webdriver.ie.driver",Locations.IEDriverPath);
 			driver = new InternetExplorerDriver();
 			log.info("Internet Explorer initialized successfully");
 			driver.manage().window().maximize();
 		}
 		if(browser.equalsIgnoreCase("headless"))
 		{
-			log.info("creating object of "+browser);
-			log.info("Headless browser is Working Fine");
-		  //Declaring and initializing the HtmlUnitWebDriver
-			driver = new HtmlUnitDriver(true);
+			log.info("Creating object of " + browser);
+
+			// Headless Chrome setup
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless=new");
+			options.addArguments("--disable-gpu");
+			options.addArguments("--window-size=1920,1080");
+			options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT);
+			driver = new ChromeDriver(options);
+
+			log.info("Headless Chrome is working fine");
 			log.info("Browser initialized successfully");
 		}
 		if(browser.equalsIgnoreCase("edge"))
 		{
-			log.info("creating object of "+browser);
-			log.info("Edge is Working Fine");
-			System.setProperty("webdriver.edge.driver",Locations.edgeDriverPath);
-			driver=new EdgeDriver();
-			log.info("Edge Browser initialized successfully");
-			driver.manage().window().maximize();
+			log.info("Creating object of " + browser);
+
+			// If you want to manually set the driver path (optional in Selenium 4+)
+			System.setProperty("webdriver.edge.driver", Locations.edgeDriverPath);
+			EdgeOptions options = new EdgeOptions();
+			options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT); // handle unexpected alerts
+			options.addArguments("--start-maximized"); // maximize on launch
+			options.addArguments("--disable-notifications"); // block notifications
+			driver = new EdgeDriver(options);
+			log.info("Edge is working fine");
+			log.info("Edge browser initialized successfully");
 		}
 			
 

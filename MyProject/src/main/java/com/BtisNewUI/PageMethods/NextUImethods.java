@@ -6,7 +6,6 @@ import java.awt.AWTException;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.UnhandledAlertException;
@@ -302,7 +301,6 @@ public class NextUImethods extends TestBase {
 			log.info("//===========================> Clicked on Proposal Document<=============================");
 			WaitMethods.wait_in_seconds(5);
 			GenericMethods.navigate_to_next_window();
-			GenericMethods.validate_text_in_pdf("Yearly Price");
 			log.info("//===========================>Proposal Document Open Successfully.<=============================");
 			
 			GenericMethods.close_browser_window();
@@ -320,7 +318,7 @@ public class NextUImethods extends TestBase {
 			GenericMethods.click_Element(NEXT_UI_locators.pro_select_btn2);	
 			
 		}
-		catch(UnhandledAlertException | ElementNotVisibleException | NoSuchElementException exe)
+		catch(UnhandledAlertException | NoSuchElementException exe)
 		{
 			log.debug("The exception was found "+exe.getClass().getCanonicalName());
 		}

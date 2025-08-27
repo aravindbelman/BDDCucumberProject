@@ -19,7 +19,7 @@ import com.LegacyApplication.Utilities.WaitMethods;
 
 public class AdminPageMethods extends TestBase {
 	
-	public static final Logger log=Logger.getLogger(WorkersCompMethods.class.getName());
+	public static final Logger log=Logger.getLogger(AdminPageMethods.class.getName());
 	public static JavascriptExecutor js;
 	
 

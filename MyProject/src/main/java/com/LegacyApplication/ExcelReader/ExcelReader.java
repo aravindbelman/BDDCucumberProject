@@ -287,13 +287,13 @@ public class ExcelReader {
 			while (cellIterator.hasNext()) {
 				Cell cell = cellIterator.next();
 				switch (cell.getCellType()) {
-				case Cell.CELL_TYPE_BOOLEAN:
+					case BOOLEAN:
 					System.out.print(cell.getBooleanCellValue() + "\t\t");
 					break;
-				case Cell.CELL_TYPE_NUMERIC:
+					case NUMERIC:
 					System.out.print(cell.getNumericCellValue() + "\t\t");
 					break;
-				case Cell.CELL_TYPE_STRING:
+					case STRING:
 					System.out.print(cell.getStringCellValue() + "\t\t");
 					break;
 				}

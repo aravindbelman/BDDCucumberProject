@@ -6,8 +6,6 @@ import java.io.IOException;
 import org.apache.log4j.Logger;
 //import org.apache.poi.ss.formula.PlainCellCache.Loc;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.remote.server.handler.mobile.GetNetworkConnection;
 
 import com.BtisNewUI.Locators.GlDirectLocators;
 import com.LegacyApplication.ExcelReader.ExcelReader;

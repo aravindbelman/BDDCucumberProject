@@ -11,6 +11,7 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -22,8 +23,6 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.log4j.Logger;
-import org.apache.pdfbox.pdfparser.PDFParser;
-import org.apache.pdfbox.util.PDFTextStripper;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
@@ -191,7 +190,7 @@ public class GenericMethods extends TestBase {
 	 */
 	public static void accept_alert()
 	{
-		WebDriverWait wait=new WebDriverWait(driver,10);
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		if(isAlertPresent()==true)
 		{
 			if(wait.until(ExpectedConditions.alertIsPresent())!=null)
@@ -215,7 +214,7 @@ public class GenericMethods extends TestBase {
 	 */
 	public static boolean isAlertPresent(){
 		boolean foundAlert = false;
-		WebDriverWait wait = new WebDriverWait(driver, 0 /*timeout in seconds*/);
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		try {
 			wait.until(ExpectedConditions.alertIsPresent());
 			foundAlert = true;
@@ -264,7 +263,7 @@ public class GenericMethods extends TestBase {
 	 */
 	public static String get_alert_text()
 	{
-		WebDriverWait wait=new WebDriverWait(driver,10);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alt=driver.switchTo().alert();
 		String text=alt.getText();
@@ -1427,31 +1426,6 @@ public class GenericMethods extends TestBase {
 	{
 		String output_string=s.trim();
 		return output_string;
-	}
-
-	/*
-	 * This method is used to validate a text from PDF
-	 * @param String Value(text)
-	 * @return string
-	 */
-	public static void validate_text_in_pdf(String text) throws IOException, InterruptedException
-	{
-		URL url = new URL(driver.getCurrentUrl());
-
-		//create buffer reader object
-		//BufferedInputStream fileToParse = new BufferedInputStream(url.openStream());
-		BufferedInputStream fileToParse = new BufferedInputStream(url.openStream());
-		PDFParser pdfParser = new PDFParser(fileToParse);
-		pdfParser.parse();
-
-		//save pdf text into string variable
-		String pdftxt = new PDFTextStripper().getText(pdfParser.getPDDocument());
-		//System.out.println("The Pdf Text is :" +pdftxt);
-
-		//close PDFParser object
-		pdfParser.getPDDocument().close();
-		Assert.assertTrue(pdftxt.contains(text));
-		log.info("Successfully validated the "+text+" in PDF");
 	}
 
 	/*

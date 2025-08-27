@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.UnhandledAlertException;
@@ -219,10 +217,6 @@ public class ClearSpring_UI_Methods extends TestBase{
 		catch(UnhandledAlertException exe)
 		{
 			log.info("Unhandled alert occured");
-		}
-		catch(ElementNotVisibleException exe)
-		{
-			log.info("Element not visible");
 		}
 		catch(NoSuchElementException exe)
 		{

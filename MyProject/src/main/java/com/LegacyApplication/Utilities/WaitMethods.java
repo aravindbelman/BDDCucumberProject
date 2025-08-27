@@ -1,5 +1,6 @@
 package com.LegacyApplication.Utilities;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -35,7 +36,7 @@ public class WaitMethods extends TestBase {
 	 */
 	public static void wait_for_element_present(WebElement wb)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,30);
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(wb));
 	}
 	
@@ -46,7 +47,7 @@ public class WaitMethods extends TestBase {
 	 */
 	public static void wait_for_elements_present(List <WebElement> wb)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOfAllElements(wb));     
 	}
 	
@@ -57,7 +58,7 @@ public class WaitMethods extends TestBase {
 	 */
 	public static void wait_for_element_to_be_clickable(WebElement wb)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(wb));
 	}
 
@@ -68,7 +69,7 @@ public class WaitMethods extends TestBase {
 	 */
 	public static void wait_until_url_contains(String url)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.urlContains(url));
 	}
 
@@ -79,7 +80,7 @@ public class WaitMethods extends TestBase {
 	 */
 	public static void wait_until_text_present(WebElement wb,String text)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.textToBePresentInElement(wb, text));
 	}
 	
@@ -90,7 +91,7 @@ public class WaitMethods extends TestBase {
 	 */
 	public static void wait_until_alert_present()
 	{
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
 	
@@ -101,7 +102,7 @@ public class WaitMethods extends TestBase {
 	 */
 	public static void wait_until_visibility_of_element(WebElement element)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.invisibilityOf(element));
 	}
 	
@@ -112,7 +113,7 @@ public class WaitMethods extends TestBase {
 	 */
 	public static void wait_until_element_selected(WebElement element)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeSelected(element));
 	}
 	
@@ -123,7 +124,7 @@ public class WaitMethods extends TestBase {
 	 */
 	public static void wait_until_aler_present(String title)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.titleContains(title));
 	}
 
@@ -135,10 +136,11 @@ public class WaitMethods extends TestBase {
 	
 	public static void fluent_wait(WebElement ele)
 	{
-		FluentWait<WebDriver> wait=new FluentWait<WebDriver>(driver);
-		wait.withTimeout(30, TimeUnit.SECONDS);
-		wait.pollingEvery(5, TimeUnit.SECONDS);
-		wait.ignoring(NoSuchElementException.class);
+		FluentWait<WebDriver> wait = new FluentWait<>(driver)
+				.withTimeout(Duration.ofSeconds(30))        // total wait time
+				.pollingEvery(Duration.ofSeconds(5))        // check every 5 seconds
+				.ignoring(NoSuchElementException.class);    // ignore exception while waiting
+
 		wait.until(ExpectedConditions.elementToBeClickable(ele));
 	}
 
