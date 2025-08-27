@@ -20,7 +20,7 @@
     <reportName>Automation Report of</reportName>
     
     <!-- report headline - displayed at top-nav, after reportHeadline -->
-    <reportHeadline>Legacy Automation</reportHeadline>
+    <reportHeadline>Integra</reportHeadline>
     
     <!-- global date format override -->
     <!-- defaults to yyyy-MM-dd -->

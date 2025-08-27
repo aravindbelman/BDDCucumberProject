@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationSuite-New WorkersComp_testHappyFlow]">
+  <listeners>
+    <listener class-name="com.LegacyApplication.CustomListner.Listner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.ExecutionListner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.RetryListner"/>
+  </listeners>
+  <test name="End-End Test WC(failed)">
+    <classes>
+      <class name="WorkesrCom_UI.TC108_ReferalConditions">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="ts04_additional_Address_ReferVerify"/>
+        </methods>
+      </class> <!-- WorkesrCom_UI.TC108_ReferalConditions -->
+      <class name="WorkesrCom_UI.TC110_HappyFlow">
+        <methods>
+          <include name="ts03_AMTrust_flow_verify_uptpPayNow"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- WorkesrCom_UI.TC110_HappyFlow -->
+    </classes>
+  </test> <!-- End-End Test WC(failed) -->
+</suite> <!-- Failed suite [AutomationSuite-New WorkersComp_testHappyFlow] -->

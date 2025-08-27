@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationSuite-New clearSpring]">
+  <listeners>
+    <listener class-name="com.LegacyApplication.CustomListner.Listner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.ExecutionListner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.RetryListner"/>
+  </listeners>
+  <test name="End-End Test(failed)">
+    <classes>
+      <class name="clearSpring.TC116_CS_multiState_HappyFlow">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- clearSpring.TC116_CS_multiState_HappyFlow -->
+      <class name="clearSpring.TC115_ClearSpringHappyFlow">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="teardown"/>
+          <include name="ts01_QCS_upTo_Submit"/>
+        </methods>
+      </class> <!-- clearSpring.TC115_ClearSpringHappyFlow -->
+    </classes>
+  </test> <!-- End-End Test(failed) -->
+</suite> <!-- Failed suite [AutomationSuite-New clearSpring] -->

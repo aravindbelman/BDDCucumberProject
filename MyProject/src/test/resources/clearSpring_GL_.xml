@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite-New clearSpring">
+	<listeners>
+		<listener
+			class-name="com.LegacyApplication.CustomListner.Listner"></listener>
+		<listener
+			class-name="com.LegacyApplication.CustomListner.ExecutionListner"></listener>
+		<listener
+			class-name="com.LegacyApplication.CustomListner.RetryListner"></listener>
+	</listeners>
+	<test name="End-End Test" preserve-order="true">
+		<classes>
+			<class name="clearSpring.TC115_ClearSpringHappyFlow" />
+			<!-- <class name="clearSpring.TC116_CS_multiState_HappyFlow" /> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- AutomationSuite -->

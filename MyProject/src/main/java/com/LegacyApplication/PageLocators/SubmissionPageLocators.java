@@ -27,62 +27,80 @@ public class SubmissionPageLocators extends TestBase
 	@FindBy(xpath=".//*[@id='searchTable']/tbody/tr[@data-index='0']/td")
 	public static WebElement submissionTableRow;
 	
-	@FindBy(xpath=".//*[@id='contextMenu']/li/a[contains(text(),'Edit/Finish Submission')]")
-	public static WebElement selectFrmCtextMenu;
+	@FindBy(xpath="//ul[@id='contextMenu']/li/a[contains(text(),'Edit/Finish Submission')]")
+	public static WebElement edit_or_finish_submission;
 	
-	@FindBy(xpath=".//*[@id='contextMenu']/li/a[contains(text(),'Review Submission')]")
+	@FindBy(xpath="//ul[@id='contextMenu']/li/a[contains(text(),'Underwriter Checklist')]")
+	public static WebElement UnderWriterChekList_link;
+	
+	@FindBy(xpath="//ul[@id='contextMenu']/li/a[contains(text(),'Renewal Letter')]")
+	public static WebElement RenewalLetter_link;
+	
+	@FindBy(xpath="//ul[@id='contextMenu']/li/a[contains(text(),'Review Submission')]")
 	public static WebElement select_review_submission;
 	
-	@FindBy(xpath=".//*[@id='Table1']/tbody/tr[3]/td/table/tbody/tr/td[@main='1']/input[contains(@value,\"Home\")]")
+	@FindBy(xpath="//ul[@id='contextMenu']/li/a[contains(text(),'Policy & Invoice')]")
+	public static WebElement policyandInvoice;
+	
+	@FindBy(xpath="//input[@id='btnPolicy']")
+	public static WebElement viewAndPrintPolicY_btn;
+	
+	@FindBy(xpath="//input[@id='btnInvoice']")
+	public static WebElement viewAndPrintInvoice_btn;
+	
+	@FindBy(xpath="//*[@id='Table1']/tbody/tr[3]/td/table/tbody/tr/td[@main='1']/input[contains(@value,\"Home\")]")
 	public static WebElement btn_Home;
 	
-	@FindBy(xpath=".//*[@id='Table1']/tbody/tr[3]/td/table/tbody/tr/td[@main='1']/input[contains(@value,\"General Liability \")]")
+	@FindBy(xpath="//*[@id='Table1']/tbody/tr[3]/td/table/tbody/tr/td[@main='1']/input[contains(@value,\"General Liability \")]")
 	public static WebElement btn_General_Liability;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_SubmissionType']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_SubmissionType']")
 	public static WebElement txtbox_SubmissionType;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_ApplicantName']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_ApplicantName']")
 	public static WebElement txtbox_ApplicantName;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_DBA']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_DBA']")
 	public static WebElement txtbox_DBA;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_State']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_State']")
 	public static WebElement txtbox_State;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_ZipCodeGL']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_ZipCodeGL']")
 	public static WebElement txtbox_ZipCodeGL;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_GLContractorLicense']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_GLContractorLicense']")
 	public static WebElement txtbox_GLContractorLicense;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_terrByZIP']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_terrByZIP']")
 	public static WebElement lbl_terrByZIP;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_NoLicenseNeeded']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_NoLicenseNeeded']")
 	public static WebElement chkbox_NoLicenseNeeded;
 
 	// -------------
+	//Under writer checklist Error page message
+	@FindBy(xpath="//h1[contains(text(),'Server Error in')]")
+	public static WebElement underwriter_chklist_messagePage;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_lblEffectiveDate']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_lblEffectiveDate']")
 	public static WebElement txtbox_ProposedEffectiveDate;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_rowTerrByZip']/td[2]")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_rowTerrByZip']/td[2]")
 	public static WebElement txt_Territory;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_Label7']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_Label7']")
 	public static WebElement txt_LicenseNumber;
 
 	//===================> General Liability Rating Criteria Locates<========================
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_Label6']']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_Label6']']")
 	public static WebElement txt_GeneralLiabilityRC;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_Limits']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_Limits']")
 	public static WebElement ddl_SearchByLimitsofInsurance;
 	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_selectDeductible']")
+	@FindBy(xpath="//*[@id='General_Liability_Screen1_selectDeductible']")
 	public static WebElement ddl_Deductible;
 	
 	@FindBy(xpath="//tr[2]/td/input[@id='General_Liability_Screen1_Owners']")
@@ -96,27 +114,37 @@ public class SubmissionPageLocators extends TestBase
 	
 	@FindBy(xpath=".//*[@id='tdDeductible1']")
 	public static WebElement text_SearchByDeductible;
-	
-	@FindBy(xpath=".//*[@id='General_Liability_Screen1_selectDeductible']")
-	public static WebElement lbl_OwnersActiveinField;
+
 
 	@FindBy(xpath="//td[text()='Number']")
 	public static WebElement tex_Name ;
 
-	@FindBy(xpath="//input[@id=\"General_Liability_Screen1_Owners\"]")
+	@FindBy(xpath="//input[@id='General_Liability_Screen1_Owners']")
 	public static WebElement lbl_ownersActivefield;
 	
-	@FindBy(xpath="//input[@id=\"General_Liability_Screen1_PartTime\"]")
-	public static WebElement tex_pull_timeEmp; 
+	@FindBy(xpath="//input[@id='General_Liability_Screen1_PartTime']")
+	public static WebElement tex_full_timeEmp; 
 	
-	@FindBy(xpath="//input[@id=\"General_Liability_Screen1_FullTime\"]")
+	@FindBy(xpath="//input[@id='General_Liability_Screen1_FullTime']")
 	public static WebElement tex_part_timeEmp; 
 
-	@FindBy(xpath="//input[@id=\"General_Liability_Screen1_PayrollEmployees\"]")
+	@FindBy(xpath="//input[@id='General_Liability_Screen1_PayrollEmployees']")
 	public static WebElement tex_total_payrole; 
 
 	@FindBy(xpath=".//*[@id='spanTotalPayroll']")
-	public static WebElement lbl_total_payrole;  
+	public static WebElement lbl_total_payrole; 
+	
+	@FindBy(xpath="//select[@id='General_Liability_Screen1_Classification1']")
+	public static WebElement classification;
+	
+	@FindBy(xpath="//input[@id='General_Liability_Screen1_SubcontractingCosts']")
+	public static WebElement subcontracting_costs;
+	
+	@FindBy(xpath="//input[@id='General_Liability_Screen1_OneYearGrossReceipts']")
+	public static WebElement gl_annual_gross_receipts;
+	
+	@FindBy(xpath="//select[@id='General_Liability_Screen1_ExperienceLoss']")
+	public static WebElement business_experience;
 
 	// ==========================> tex_OptionalCoverages <===============================
 	@FindBy(id="General_Liability_Screen1_Label10")
@@ -233,6 +261,9 @@ public class SubmissionPageLocators extends TestBase
 	@FindBy(xpath="//input[@id='Header1_TabControl1_btn42']")
     public static WebElement price_indicator_tab;
 	
+	@FindBy(xpath="//span[@id='Header1_SubmissionID1_lblSubmissionIDValue']")
+    public static WebElement priceIndicator_submission_id;
+	
 	@FindBy(xpath="//input[@id='Price_Indicator_Screen1_cbManifestWithoutSunsetYes']")
 	public static WebElement manifest_without_sunset_yes;
 	
@@ -254,7 +285,7 @@ public class SubmissionPageLocators extends TestBase
 	@FindBy(xpath="//select[@id='Price_Indicator_Screen1_Limits']")
 	public static WebElement pi_select_limit;
 	
-	@FindBy(xpath="//select[@id='Price_Indicator_Screen1_ddldeductible']")
+	@FindBy(xpath="//select[@id='Price_Indicator_Screen1_ddldeductible' and @name='Price_Indicator_Screen1:ddldeductible']")
 	public static WebElement pi_deductible;
 	
 	@FindBy(xpath="//input[@id='Price_Indicator_Screen1_rbTerrorismAccept']")
@@ -263,138 +294,254 @@ public class SubmissionPageLocators extends TestBase
 	@FindBy(xpath="//input[@id='Price_Indicator_Screen1_rbTerrorismDecline']")
 	public static WebElement terrorism_decline_radio;
 	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblGLPremWithoutSunset']")
+	public static WebElement manifestprovision_glpremium;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblEandO_Without']")
+	public static WebElement manifestprovision_workmanshipcoverage;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblTotalGLPremWithoutSunset']")
+	public static WebElement manifestprovision_totalglpremium;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblModNoTerrorismWithoutSunset']")
+	public static WebElement manifestprovision_terrorismpremium;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblPolFeeGLWithoutSunset']")
+	public static WebElement manifestprovision_policyfee;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblTotalGLPolicyNotCovWithoutSunset']")
+	public static WebElement manifestprovision_total_glpolicy;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_GLPremWithSunset']")
+	public static WebElement occurenceform_glpremium_withsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_GLPremWithoutSunset']")
+	public static WebElement occurenceform_glpremium_withoutsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblEandO_OCC_With']")
+	public static WebElement occurenceform_faultyworkmanship_withsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblEandO_OCC_Without']")
+	public static WebElement occurenceform_faultyworkmanship_withoutsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_TotalGLPremWithSunset']")
+	public static WebElement occurenceform_total_glpremium_withsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_TotalGLPremWithoutSunset']")
+	public static WebElement occurenceform_total_glpremium_withoutsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_NoTerrorismWithSunset']")
+	public static WebElement occurenceform_terrorismpremium_withsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_NoTerrorismWithoutSunset2']")
+	public static WebElement occurenceform_terrorismpremium_withoutsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_PolFeeGLWithSunset']")
+	public static WebElement occurenceform_policyfee_withsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_PolFeeGLWithoutSunset']")
+	public static WebElement occurenceform_policyfee_withoutsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_TotalGLPolNotCovWithSunset']")
+	public static WebElement occurenceform_totalglplicy_withsunset;
+	
+	@FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_TotalGLPolNotCovWithoutSunset']")
+	public static WebElement occurenceform_totalglplicy_withoutsunset;
+	
+	@FindBy(xpath="//input[@id='Footer1_btnNext']")
+	public static WebElement priceIndicator_nextbtn;
 	//================> Locators for Eligibility Page (Common Eligibility Questions) <======================
 	
 	@FindBy(xpath="//input[@id='Header1_TabControl1_btn52']")
 	public static WebElement eligibility_page;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122241']")
+	@FindBy(xpath="//input[@id='Eligibility_Screen1_chkShowAnswers' and @name='Eligibility_Screen1:chkShowAnswers']")
+	public static WebElement eligibility_autofill_chkbox;
+	
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=1]")
 	public static WebElement radio_btn1;
 	
-	@FindBy(xpath="//*[@id='rbCQ_122240']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=2]")
     public static WebElement radio_btn2;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122251']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=3]")
 	public static WebElement radio_btn3;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122250']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=4]")
 	public static WebElement radio_btn4;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122261']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=5]")
 	public static WebElement radio_btn5;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122260']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=6]")
 	public static WebElement radio_btn6;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122271']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=7]")
 	public static WebElement radio_btn7;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122270']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=8]")
 	public static WebElement radio_btn8;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122281']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=9]")
 	public static WebElement radio_btn9;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122280']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=10]")
 	public static WebElement radio_btn10;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122291']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=11]")
 	public static WebElement radio_btn11;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122290']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=12]")
 	public static WebElement radio_btn12;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122301']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=13]")
 	public static WebElement radio_btn13;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122300']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=14]")
 	public static WebElement radio_btn14;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122311']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=15]")
 	public static WebElement radio_btn15;
 	 
-	@FindBy(xpath="//input[@id='rbCQ_122310']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=16]")
 	public static WebElement radio_btn16;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122321']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=17]")
 	public static WebElement radio_btn17;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122320']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=18]")
 	public static WebElement radio_btn18;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122331']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=19]")
 	public static WebElement radio_btn19;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122330']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=20]")
 	public static WebElement radio_btn20;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122341']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=21]")
 	public static WebElement radio_btn21;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122340']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=22]")
 	public static WebElement radio_btn22;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122351']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=23]")
 	public static WebElement radio_btn23;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122350']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=24]")
 	public static WebElement radio_btn24;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122361']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=25]")
 	public static WebElement radio_btn25;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122360']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=26]")
 	public static WebElement radio_btn26;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122371']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=27]")
 	public static WebElement radio_btn27;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122370']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=28]")
 	public static WebElement radio_btn28;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122381']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=29]")
 	public static WebElement radio_btn29;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122380']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=30]")
 	public static WebElement radio_btn30;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122391']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=31]")
 	public static WebElement radio_btn31;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122390']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=32]")
 	public static WebElement radio_btn32;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122401']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=33]")
 	public static WebElement radio_btn33;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122400']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=34]")
 	public static WebElement radio_btn34;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122411']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=35]")
 	public static WebElement radio_btn35;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122410']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=36]")
 	public static WebElement radio_btn36;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122421']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=37]")
 	public static WebElement radio_btn37;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122420']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=38]")
 	public static WebElement radio_btn38;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122431']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=39]")
 	public static WebElement radio_btn39;
 	
-	@FindBy(xpath="//input[@id='rbCQ_122430']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbCQ_')])[position()=40]")
 	public static WebElement radio_btn40;
+	
+	//================> Locators for Eligibility Page (Specific Eligibility Questions) for Air Conditioning Classification <======================
+	
+	@FindBy(xpath="//input[@id='rbTO_13826__911111']")
+	public static WebElement seq_airCond_radio_btn41;
+	
+	@FindBy(xpath="//input[@id='rbTO_13826__911110']")
+	public static WebElement seq_airCond_radio_btn42;
+	
+	@FindBy(xpath="//input[@id='rbTO_13827__911111']")
+	public static WebElement seq_airCond_radio_btn43;
+	
+	@FindBy(xpath="//input[@id='rbTO_13827__911110']")
+	public static WebElement seq_airCond_radio_btn44;
+	
+	@FindBy(xpath="//input[@id='rbTO_13828__911111']")
+	public static WebElement seq_airCond_radio_btn45;
+	
+	@FindBy(xpath="//input[@id='rbTO_13828__911110']")
+	public static WebElement seq_airCond_radio_btn46;
+	
+	@FindBy(xpath="//input[@id='rbTO_13829__911111']")
+	public static WebElement seq_airCond_radio_btn47;
+	
+	@FindBy(xpath="//input[@id='rbTO_13829__911110']")
+	public static WebElement seq_airCond_radio_btn48;
+	
+	@FindBy(xpath="//input[@id='rbTO_13830__911111']")
+	public static WebElement seq_airCond_radio_btn49;
+	
+	@FindBy(xpath="//input[@id='rbTO_13830__911110']")
+	public static WebElement seq_airCond_radio_btn50;
+	
+	@FindBy(xpath="//input[@id='rbTO_13831__911111']")
+	public static WebElement seq_airCond_radio_btn51;
+	
+	@FindBy(xpath="//input[@id='rbTO_13831__911110']")
+	public static WebElement seq_airCond_radio_btn52;
+	
+	@FindBy(xpath="//input[@id='rbTO_13832__911111']")
+	public static WebElement seq_airCond_radio_btn53;
+	
+	@FindBy(xpath="//input[@id='rbTO_13832__911110']")
+	public static WebElement seq_airCond_radio_btn54;
+	
+	//================> Locators for Eligibility Page (Specific Eligibility Questions) Building Structure Raising Or Moving <======================
+	
+	@FindBy(xpath="//input[@id='rbTO_14453__912801']")
+	public static WebElement seq_buildingStructureRaising_radio_btn41;
+	
+	@FindBy(xpath="//input[@id='rbTO_14453__912800']")
+	public static WebElement seq_buildingStructureRaising_radio_btn42;
+	
+	@FindBy(xpath="//input[@id='rbTO_14454__912801']")
+	public static WebElement seq_buildingStructureRaising_radio_btn43;
+	
+	@FindBy(xpath="//input[@id='rbTO_14454__912800']")
+	public static WebElement seq_buildingStructureRaising_radio_btn44;
 	
 	//================> Locators for Eligibility Page (Specific Eligibility Questions) <======================
 	
-	
-	@FindBy(xpath="//input[@id='rbTO_12290__913421']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbTO_')])[position()=1]")
 	public static WebElement radio_btn41;
 	
-	@FindBy(xpath="//input[@id='rbTO_12290__913420']")
+	@FindBy(xpath="(//input[starts-with(@id,'rbTO_')])[position()=2]")
 	public static WebElement radio_btn42;
 	
 	@FindBy(xpath="//input[@id='rbTO_12291__913421']")
@@ -517,6 +664,15 @@ public class SubmissionPageLocators extends TestBase
     @FindBy(xpath="//input[@id='rbTO_14856__913420']")
    	public static WebElement radio_btn82;
     
+    @FindBy(xpath="//input[@id='rbTO_14525__988841']")
+    public static WebElement sterile_env_rdBtn_yes;
+    
+    @FindBy(xpath="//input[@id='rbTO_14525__988840']")
+    public static WebElement sterile_env_rdBtn_no;
+    
+    @FindBy(xpath="//input[@id='Footer1_btnNext' and @name='Footer1:btnNext']")
+    public static WebElement eligibilitypage_nxtbtn;
+    
   //================> Locators for Application Page (Specific Eligibility Questions) <======================
     
   //================> Primary Premise Location Information <======================
@@ -591,16 +747,22 @@ public class SubmissionPageLocators extends TestBase
     @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_TxtEmail']")
     public static WebElement email_address;
     
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_NoEmail']")
+    public static WebElement no_emailAddress_checkbox;
+    
     @FindBy(xpath="//select[@id='General_BusinessInfo_Screen1_TypeOfBusinessID']")
     public static WebElement business_type;
     
-    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_IdentityTheftProtectionContactName']")
+    @FindBy(xpath="//input[@name='General_BusinessInfo_Screen1:IdentityTheftProtectionContactName']")
     public static WebElement theft_protection;
     
   //=======================================> WebElements of Business Experience <==================================== 
     
-    @FindBy(xpath="//select[@id='General_BusinessInfo_Screen1_YearsInBusiness']")
+    @FindBy(xpath="//select[@id='General_BusinessInfo_Screen1_YearsInBusiness' and @name='General_BusinessInfo_Screen1:YearsInBusiness']")
     public static WebElement years_in_business;
+    
+    @FindBy(xpath="//select[@id='General_BusinessInfo_Screen1_YearsInBusiness']//option")
+    public static List<WebElement> list_years_in_business;
     
     @FindBy(xpath="//select[@id='General_BusinessInfo_Screen1_YearsExperience']")
     public static WebElement construction_experience;
@@ -614,11 +776,14 @@ public class SubmissionPageLocators extends TestBase
     @FindBy(xpath="//span[@id='General_BusinessInfo_Screen1_Label18']//following::td[1]")
     public static WebElement sub_contractor_costs;
     
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_Concrete']")
+    public static WebElement SubContarctorWork_concrete;
+    
     @FindBy(xpath="//span[@id='General_BusinessInfo_Screen1_Label20']//following::td[1]")
     public static WebElement requested_eff_date;
     
     @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_ExpireDate']")
-    public static WebElement current_gl_policy;
+    public static WebElement current_gl_policy_expiration;
     
     @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_CarrierName1']")
     public static WebElement carrier_name;
@@ -667,6 +832,15 @@ public class SubmissionPageLocators extends TestBase
     @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_butSubmit']")
     public static WebElement submit_button;
     
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_butBind']")
+    public static WebElement submit_qes_btn;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_btnBindVictExpress']")
+    public static WebElement submit_victoryExpress;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_bindVictExpress' and @type='submit']")
+    public static WebElement victoryExpress_OkayBtn;
+    
     @FindBy(xpath="//input[@id='Footer1_btnPrev']")
     public static WebElement previous_button;
     
@@ -710,7 +884,7 @@ public class SubmissionPageLocators extends TestBase
    public static WebElement review_contact;
    
    @FindBy(xpath="//span[@id='lblAgencyName']")
-   public static WebElement review_agentname;
+   public static WebElement review_agencyname;
    
    @FindBy(xpath="//span[@id='lblContactPhone']")
    public static WebElement review_phone;
@@ -724,7 +898,7 @@ public class SubmissionPageLocators extends TestBase
    // ================> Review application Info <======================
    
    @FindBy(xpath="//td[@id='TdSubmission2']")
-   public static WebElement review_sumission_type;
+   public static WebElement review_submission_type;
    
    @FindBy(xpath="//td[@id='TdApplicant2']")
    public static WebElement review_appname;
@@ -762,13 +936,13 @@ public class SubmissionPageLocators extends TestBase
    public static WebElement review_parttime_emp;
    
    @FindBy(xpath="//td[@id='tdGeneralLiabilityScreen']/table[5]/tbody/tr[4]/td[3]")
-   public static WebElement reivew_fulltime_emp;
+   public static WebElement review_fulltime_emp;
    
    @FindBy(xpath="//td[@id='tdPayrollEmployees']")
    public static WebElement review_totalemp_payroll;
    
    @FindBy(xpath="//td[@id='tdGeneralLiabilityScreen']/table[5]/tbody/tr[6]/td[5]")
-   public static WebElement review_leased_emp;
+   public static WebElement review_leased_emp_payroll;
    
    @FindBy(xpath="//td[@id='TdPayRoll']")
    public static WebElement review_payroll_assigned;
@@ -780,7 +954,7 @@ public class SubmissionPageLocators extends TestBase
    public static WebElement review_annualgross_receipt;
    
    @FindBy(xpath="//div[@id='showExperienceLoss']")
-   public static WebElement experience_loss;
+   public static WebElement review_experience_history;
    
 // ================> Review optional coverages Info <======================
    
@@ -791,7 +965,7 @@ public class SubmissionPageLocators extends TestBase
    public static WebElement review_stopgap_liability;
    
    @FindBy(xpath="//tr[@id='trPerProjectAggregate']/td[2]")
-   public static WebElement revicew_perproject_aggregate;
+   public static WebElement review_perproject_aggregate;
    
    @FindBy(xpath="//tr[@id='trEmployeeBenefits']/td[2]")
    public static WebElement review_empbenefirs_liability;
@@ -889,6 +1063,131 @@ public class SubmissionPageLocators extends TestBase
    @FindBy(xpath="//span[@id='Price_Indicator_Screen1_lblFO_TotalGLPolNotCovWithoutSunset']")
    public static WebElement review_occurenceformwithoutsunset_totalglpolicy;
    
+// ================> Review Common Eligibility Question locators <====================== 
    
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl2_lblQuestionCO']//following::td[1]/b")
+   public static WebElement review_ceq_question1;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl3_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question2;
+   
+   @FindBy(xpath=".//*[@id='Eligibility_Screen1_dgCommonQuestions__ctl4_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question3;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl5_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question4;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl6_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question5;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl7_lblQuestionCO']//following::td[1]/b")
+   public static WebElement review_ceq_question6;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl8_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question7;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl9_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question8;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl10_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question9;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl11_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question10;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl12_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question11;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl13_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question12;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl14_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question13;
+   
+   @FindBy(xpath=".//*[@id='Eligibility_Screen1_dgCommonQuestions__ctl15_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question14;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl16_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question15;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl17_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question16;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl18_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question17;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl19_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question18;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl20_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question19;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgCommonQuestions__ctl21_lblQuestionCO']//following::td[2]/b")
+   public static WebElement review_ceq_question20;
+   
+// ================> Review Specific Eligibility Questions locators <====================== 
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl2_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question1;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl3_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question2;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl4_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question3;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl5_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question4;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl6_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question5;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl7_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question6;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl8_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question7;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl9_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question8;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl10_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question9;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl11_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question10;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl12_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question11;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl13_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question12;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl14_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question13;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl15_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question14;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl16_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question15;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl17_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question16;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl18_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question17;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl19_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question18;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl20_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question19;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl21_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question20;
+   
+   @FindBy(xpath="//span[@id='Eligibility_Screen1_dgTradeOffQuestions__ctl22_Label2']//following::td[2]/b")
+   public static WebElement review_seq_question21;
    
 }

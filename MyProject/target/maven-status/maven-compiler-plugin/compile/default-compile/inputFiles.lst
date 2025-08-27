@@ -1,21 +1,63 @@
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\InitializeElements\InitializeElements.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\Locations\Locations.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\CommercialAutoLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\InlandMarineLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\CustomListner\ExecutionListner.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\TestBase\TestBase.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\SmallBusinessLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\SubmissionPageLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\CustomListner\Listner.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\WorkersCompLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\Utilities\WaitMethods.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\ExcelReader\ExcelReader.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\BondsLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\HomePageMethods.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\HomePageLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\SpecialEventsLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\Utilities\GenericMethods.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\ExcessRaterLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\GeneralLiabilityPageLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\BuildersRiskLocators.java
-E:\Education\Selenium Programs\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\SubmissionPageMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\BuildersRiskMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\ExcelReader\ExcelReader.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\InlandMarineLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\WorkersCompLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\AutoRenewalBrokerFeeLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\DatabaseConnectionandSqlQueries.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\CustomListner\RetryListner.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\JenkinsBuildMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\PageMethods\CBIC_New_UI_Methods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\Locators\NEXT_UI_locators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\Utilities\WaitMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\AutoRenewalBrokerFeeMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\AdminTasksLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\Locators\CBIC_NewLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\BondsLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\BrokerFeeInfo.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\HomePageMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\AgencyMainMenuLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\ExcessProgramRaterLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\SubmissionPageMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\PageMethods\NextUImethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\CommercialAutoLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\GeneralLiabilityMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\InitializeElements\InitializeElements.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\ExcessRaterLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\GeneralLiabilityPageLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\AdminPageLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\CustomListner\RetryFailedTests.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\PageMethods\GlDirectMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\PageMethods\CBIC_UI_Methods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\HomePageLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\Locators\CBICLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\PageMethods\StarrUIMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\AgencyPageMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\QaaFilingChangeMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\TestBase\TestBase.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\Locations\Locations.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\AdminPageMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\Locators\RegistrationProcessLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\AdminSubmissionPageMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\CustomListner\ExecutionListner.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\AdminSubmissionPageLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\SubmissionPageLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\BondsMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\Locators\GlDirectLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\PageMethods\WCnewUIMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\ExcessRaterMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\SpecialEventsLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\PageMethods\RegistrationProcessMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\Utilities\GenericMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\PageMethods\ClearSpring_UI_Methods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\SmallBusinessLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\Locators\ClearSpringLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\KraftLakeWholesalerMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\Locators\WCnewUILocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\InlandMarineMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\BtisNewUI\Locators\StarrUILocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\BuildersRiskLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\KraftLakeWholesalerLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\WorkersCompMethods.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\CustomListner\Listner.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageLocators\DefaultBrokerFeeLocators.java
+E:\Education\Maske\LegacyApplication\src\main\java\com\LegacyApplication\PageMethods\CommercialAutoMethods.java

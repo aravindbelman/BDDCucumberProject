@@ -65,11 +65,12 @@ public class Listner extends TestBase implements ITestListener {
 	}
 
 	public void onTestStart(ITestResult result) {
-		log.info("<====Test Started Running=====>"+result.getMethod().getMethodName());
-		
+		log.info("<====Test Started Running=====>"+result.getName());
+		log.info("<====Test started=====>"+result.getMethod().getMethodName());
 	}
 
 	public void onTestSuccess(ITestResult result) {
+		System.out.println("The name of the testcase passed is :"+result.getName());
 		Calendar calendar=Calendar.getInstance();
 		 SimpleDateFormat formater= new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		 String methodName=result.getName();

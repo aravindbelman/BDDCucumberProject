@@ -41,11 +41,20 @@ public class ExcessRaterLocators extends TestBase {
     @FindBy(xpath="//select[@id='Rating_Screen1_ClassificationTypeId']")
     public static WebElement er_class_type;
     
+    @FindBy(xpath="//select[@id='Rating_Screen1_ContractorClassId']")
+    public static WebElement er_classification_type;
+    
     @FindBy(xpath="//select[@id='Rating_Screen1_ExcessCoverageLimit']")
     public static WebElement er_excess_coverage_limit;
     
     @FindBy(xpath="//select[@id='Rating_Screen1_ExcessCoverageOver']")
     public static WebElement er_excess_coverage_over;
+    
+    @FindBy(xpath="//select[@id='Rating_Screen1_UnderlyingGllimits']")
+    public static WebElement er_underLying_gl_limits;
+    
+    @FindBy(xpath="//input[@id='Rating_Screen1_UnderlyingGlpremium']")
+    public static WebElement er_underLying_gl_premium;
     
     @FindBy(xpath="//input[@id='Rating_Screen1_btnRateIT']")
     public static WebElement er_rateitnow_btn;

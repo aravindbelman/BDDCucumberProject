@@ -1,5 +1,6 @@
 package com.LegacyApplication.Utilities;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -28,14 +29,36 @@ public class WaitMethods extends TestBase {
 	}
 	
 	/*
-	 * Purpose: This method is used to wait Explicitly for an element to present ina Webpage
+	 * Purpose: This method is used to wait Explicitly for an element to present in a Webpage
 	 * @param WebElement
 	 * @return NA
 	 */
 	public static void wait_for_element_present(WebElement wb)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOf(wb));
+	}
+	
+	/*
+	 * Purpose: This method is used to wait Explicitly for the list to web elements in a Webpage
+	 * @param WebElement
+	 * @return NA
+	 */
+	public static void wait_for_elements_present(List <WebElement> wb)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,20);
+		wait.until(ExpectedConditions.visibilityOfAllElements(wb));     
+	}
+	
+	/*
+	 * Purpose: This method is used to wait Explicitly for the web element to be clickable
+	 * @param WebElement
+	 * @return NA
+	 */
+	public static void wait_for_element_to_be_clickable(WebElement wb)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,20);
+		wait.until(ExpectedConditions.elementToBeClickable(wb));
 	}
 
 	/*
@@ -76,7 +99,7 @@ public class WaitMethods extends TestBase {
 	 * @param WebElement (element)
 	 * @return NA
 	 */
-	public static void wait_until_invisibility_of_element(WebElement element)
+	public static void wait_until_visibility_of_element(WebElement element)
 	{
 		WebDriverWait wait=new WebDriverWait(driver,20);
 		wait.until(ExpectedConditions.invisibilityOf(element));
@@ -110,7 +133,7 @@ public class WaitMethods extends TestBase {
 	 * @return NA
 	 */
 	
-	public void fluent_wait(WebElement ele)
+	public static void fluent_wait(WebElement ele)
 	{
 		FluentWait<WebDriver> wait=new FluentWait<WebDriver>(driver);
 		wait.withTimeout(30, TimeUnit.SECONDS);

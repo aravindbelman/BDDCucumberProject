@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite">
+	<listeners>
+		<listener
+			class-name="com.LegacyApplication.CustomListner.Listner"></listener>
+		<listener
+			class-name="com.LegacyApplication.CustomListner.ExecutionListner"></listener>
+		<listener
+			class-name="com.LegacyApplication.CustomListner.RetryListner"></listener>
+	</listeners>
+	<test name="End-End Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal" />
+			<!-- <class
+				name="com.LegacyApplication.AutoRenewBrokerFee.TC018_ValidateDifferentFlatBrokerFeeForNewandRenewal" />
+			<class
+				name="com.LegacyApplication.AutoRenewBrokerFee.TC019_ValidateSamePercentageBrokerFeeForNewandRenewal" />
+			<class
+				name="com.LegacyApplication.AutoRenewBrokerFee.TC020_ValidateDifferentPercentageBrokerFeeForNewandRenewal" />
+			<class
+				name="com.LegacyApplication.AutoRenewBrokerFee.TC021_ValidateSameTieredBrokerFeeForNewandRenewal" />
+			<class
+				name="com.LegacyApplication.AutoRenewBrokerFee.TC022_ValidateDifferentTieredBrokerFeeForNewandRenewal" />
+			<class
+				name="com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee" />
+			<class
+				name="com.LegacyApplication.AutoRenewBrokerFee.TC023_NonBetaAgencyRenewalLetter" /> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- AutomationSuite -->

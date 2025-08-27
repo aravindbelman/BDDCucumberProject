@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationSuite-New AR Changes]">
+  <listeners>
+    <listener class-name="com.LegacyApplication.CustomListner.Listner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.ExecutionListner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.RetryListner"/>
+  </listeners>
+  <test thread-count="5" name="End-End Test(failed)">
+    <classes>
+      <class name="com.LegacyApplication.NewARProcess.TC076_VerifySubmissionStatus_NormalAgency_PremiumFinance">
+        <methods>
+          <include name="review_submissionStatus_NormalAgency_PremiumFinance"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.NewARProcess.TC076_VerifySubmissionStatus_NormalAgency_PremiumFinance -->
+      <class name="com.LegacyApplication.NewARProcess.TC080_VerifySoldStatusandRatingWorkSheet_BindReqPending">
+        <methods>
+          <include name="verifySoldStatusandRatingWorksheet"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.NewARProcess.TC080_VerifySoldStatusandRatingWorkSheet_BindReqPending -->
+    </classes>
+  </test> <!-- End-End Test(failed) -->
+</suite> <!-- Failed suite [AutomationSuite-New AR Changes] -->

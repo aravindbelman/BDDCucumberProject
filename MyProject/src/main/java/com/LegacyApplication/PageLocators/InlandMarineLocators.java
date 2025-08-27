@@ -1,5 +1,7 @@
 package com.LegacyApplication.PageLocators;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +16,7 @@ public class InlandMarineLocators extends TestBase {
     
   //....................>Inland Marine Locators<<.............................//
     
-    @FindBy(xpath="//a[@class='btn btn-default btn-primary' and normalize-space(text()='Inland Marine')]")
+    @FindBy(xpath="//div[@id='stateAndGroupSelector']//a[contains(normalize-space(text()), 'Inland Marine')]")
     public static WebElement inland_marine_tab;
     
     @FindBy(xpath="//img[@alt='Victory Inland Marine']")
@@ -105,6 +107,104 @@ public class InlandMarineLocators extends TestBase {
     
     @FindBy(xpath="//input[@id='Rating_Screen1_btnRateIT']")
     public static WebElement vim_rateitnow_btn;
+    
+    //....................>Victory Inland Marine price Indicator Locators<<.............................//
+    
+    @FindBy(xpath="//input[@id='Price_Indicator_Screen1_rbTerrorismAccept']")
+    public static WebElement vim_terrorismAccept_radio;
+    
+    @FindBy(xpath="//input[@id='Price_Indicator_Screen1_rbTerrorismDecline']")
+    public static WebElement vim_terrorismDecline_radio;
+    
+    @FindBy(xpath="//input[@id='Footer1_btnPrev']")
+    public static WebElement vim_priceIndicator_prevBtn;
+    
+    @FindBy(xpath="//input[@id='Footer1_btnNext']")
+    public static WebElement vim_priceIndicator_nextBtn;
+    
+  //....................>Victory Inland Marine Eligibility page Locators<<.............................//
+    
+    @FindBy(xpath="//input[@type='radio' and @value='0']")
+    public static List<WebElement> radiobtn_list_no;
+    
+    @FindBy(xpath="//input[@id='Footer1_btnPrev']")
+    public static WebElement vim_eligibilityQus_prev;
+    
+    @FindBy(xpath="//input[@id='Footer1_btnNext']")
+    public static WebElement vim_eligibitityQus_nextBtn;
+    
+    //....................>Victory Inland Marine Application Info Locators<<.............................//
+    
+    @FindBy(xpath="//span[@id='General_BusinessInfo_Screen1_Label2' and contains(text(),'Name')]/following::td[1]")
+    public static WebElement vim_applicationInfo_name;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_Address']")
+    public static WebElement vim_applicationInfo_phyAddress;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_City']")
+    public static WebElement vim_applicationInfo_city;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_State']")
+    public static WebElement vim_applicationInfo_state;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_ZipCode']")
+    public static WebElement vim_applicationInfo_zipcode;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_SameMailingAddress']")
+    public static WebElement vim_applicationInfo_sameMailingAddress_chkbx;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_Contact']")
+    public static WebElement vim_applicationInfo_contactName;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_Area']")
+    public static WebElement vim_applicationInfo_ofcPhnNum_area;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_Prefix']")
+    public static WebElement vim_applicationInfo_ofcPhnNum_prefix;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_Phone']")
+    public static WebElement vim_applicationInfo_ofcPhnNum_phone;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_cellArea']")
+    public static WebElement vim_applicationInfo_celPhnum_area;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_cellPrefix']")
+    public static WebElement vim_applicationInfo_celPhnum_prefix;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_cellPhone']")
+    public static WebElement vim_applicationInfo_celPhnum_phone;
+    
+    @FindBy(xpath="//select[@id='General_BusinessInfo_Screen1_TypeOfBusinessID']")
+    public static WebElement vim_applicationInfo_businessType;
+    
+    @FindBy(xpath="//select[@id='General_BusinessInfo_Screen1_YearsInBusiness']")
+    public static WebElement vim_applicationInfo_yearsInBusiness;
+    
+    @FindBy(xpath="//select[@id='General_BusinessInfo_Screen1_YearsExperience']")
+    public static WebElement vim_applicationInfo_constructionExperience;
+    
+    @FindBy(xpath="//textarea[@id='General_BusinessInfo_Screen1_DescriptionOperations']")
+    public static WebElement vim_applicationInfo_desctiptionOperations;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_ExpireDate']")
+    public static WebElement vim_applicationInfo_currentPolExpDate;
+    
+    @FindBy(xpath="//select[@id='General_BusinessInfo_Screen1_NumberOfLosses']")
+    public static WebElement vim_applicationInfo_IMNumOfLosses;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_AmountOfLosses']")
+    public static WebElement vim_applicationInfo_IMAmountofLosses;
+    
+    @FindBy(xpath="//a[@id='lnkAddLossPayee1']")
+    public static WebElement vim_applicationInfo_addLossPayeeLink;
+    
+    @FindBy(xpath="//input[@id='General_BusinessInfo_Screen1_butBind']")
+    public static WebElement vim_applicationInfo_submitToUnderwriting_btn;
+    
+  //....................>Victory Inland Marine binding doc Locators<<.............................//
+    
+    @FindBy(xpath="//a[@id='hlApplication' and contains(text(), 'PDF Application')]")
+    public static WebElement bindingdoc_pdf_application_link;
     
     //....................>Victory Inland Marine Special Floater Locators<<.............................//
     

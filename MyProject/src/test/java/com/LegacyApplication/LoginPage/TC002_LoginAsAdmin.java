@@ -2,13 +2,14 @@ package com.LegacyApplication.LoginPage;
 
 import java.io.IOException;
 import org.apache.log4j.Logger;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.LegacyApplication.InitializeElements.InitializeElements;
 import com.LegacyApplication.PageMethods.HomePageMethods;
 import com.LegacyApplication.TestBase.TestBase;
 
-
+@Listeners({com.LegacyApplication.CustomListner.ExecutionListner.class, com.LegacyApplication.CustomListner.Listner.class, com.LegacyApplication.CustomListner.RetryListner.class})
 public class TC002_LoginAsAdmin extends TestBase{
 
 	public static final Logger log=Logger.getLogger(TC002_LoginAsAdmin.class.getName());
@@ -18,7 +19,7 @@ public class TC002_LoginAsAdmin extends TestBase{
 	{
 		log.info("<===========Started Verify Login as Admin Credentials Test===========> ");
 		
-		init_admin();
+		initialize_chrome("Admin_Url");
 		InitializeElements.initialize_elements();
 		HomePageMethods.login_as_admin();
 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationSuiteStarr]">
+  <listeners>
+    <listener class-name="com.LegacyApplication.CustomListner.Listner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.ExecutionListner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.RetryListner"/>
+  </listeners>
+  <test name="Starr End-End Test(failed)">
+    <classes>
+      <class name="StarUI.TC095_Validate_Deductible">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- StarUI.TC095_Validate_Deductible -->
+      <class name="StarUI.TC092_CreateStarr_SmallMarine_Sub">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- StarUI.TC092_CreateStarr_SmallMarine_Sub -->
+      <class name="StarUI.TC094_ValidateStates_support">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="states_for_submission"/>
+        </methods>
+      </class> <!-- StarUI.TC094_ValidateStates_support -->
+      <class name="StarUI.TC098_Submission_MultiplePaymentOptions">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- StarUI.TC098_Submission_MultiplePaymentOptions -->
+      <class name="StarUI.TC091_CreateStarr_MarineArt_Sub">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="teardown"/>
+          <include name="starr_marineSubmission"/>
+        </methods>
+      </class> <!-- StarUI.TC091_CreateStarr_MarineArt_Sub -->
+      <class name="StarUI.TC097_CreateSub_Diff_BusinessNmailAddress">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- StarUI.TC097_CreateSub_Diff_BusinessNmailAddress -->
+      <class name="StarUI.TC096_ServiceFeeStateWise">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- StarUI.TC096_ServiceFeeStateWise -->
+    </classes>
+  </test> <!-- Starr End-End Test(failed) -->
+</suite> <!-- Failed suite [AutomationSuiteStarr] -->
