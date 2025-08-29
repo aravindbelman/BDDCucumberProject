@@ -1,6 +1,5 @@
 package com.MyProject.hooks;
 
-import com.LegacyApplication.TestBase.TestBase;
 import com.utils.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
