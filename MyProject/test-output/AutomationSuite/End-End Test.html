@@ -1,0 +1,347 @@
+<html>
+<head>
+<title>TestNG:  End-End Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>End-End Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/3</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 05 02:12:17 PST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>6054 seconds (6054657 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal.setup_flat_brokerfee()'><b>setup_flat_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal<br/>
+<a href="#Output-1937765828" onClick='toggleBox("Output-1937765828", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1937765828" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1937765828">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_05_11_2019_02_28_41.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_05_11_2019_02_28_41.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_05_11_2019_02_28_42.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_05_11_2019_02_28_42.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>861</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal@7b227d8d</td></tr>
+<tr>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC018_ValidateDifferentFlatBrokerFeeForNewandRenewal.setup_flat_brokerfee()'><b>setup_flat_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC018_ValidateDifferentFlatBrokerFeeForNewandRenewal<br/>
+<a href="#Output-889096613" onClick='toggleBox("Output-889096613", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-889096613" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-889096613">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_05_11_2019_02_41_56.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_05_11_2019_02_41_56.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_05_11_2019_02_41_57.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_05_11_2019_02_41_57.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>792</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC018_ValidateDifferentFlatBrokerFeeForNewandRenewal@7219ec67</td></tr>
+<tr>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC019_ValidateSamePercentageBrokerFeeForNewandRenewal.setup_percentage_brokerfee()'><b>setup_percentage_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC019_ValidateSamePercentageBrokerFeeForNewandRenewal<br/>
+<a href="#Output-2043302347" onClick='toggleBox("Output-2043302347", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2043302347" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2043302347">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_05_11_2019_02_54_05.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_05_11_2019_02_54_05.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_05_11_2019_02_54_06.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_05_11_2019_02_54_06.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>726</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC019_ValidateSamePercentageBrokerFeeForNewandRenewal@45018215</td></tr>
+<tr>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC020_ValidateDifferentPercentageBrokerFeeForNewandRenewal.setup_percentage_brokerfee()'><b>setup_percentage_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC020_ValidateDifferentPercentageBrokerFeeForNewandRenewal<br/>
+<a href="#Output-1368087943" onClick='toggleBox("Output-1368087943", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1368087943" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1368087943">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_05_11_2019_03_06_32.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_05_11_2019_03_06_32.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_05_11_2019_03_06_33.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_05_11_2019_03_06_33.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>744</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC020_ValidateDifferentPercentageBrokerFeeForNewandRenewal@65d6b83b</td></tr>
+<tr>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC021_ValidateSameTieredBrokerFeeForNewandRenewal.setup_tiered_brokerfee()'><b>setup_tiered_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC021_ValidateSameTieredBrokerFeeForNewandRenewal<br/>
+<a href="#Output-82220349" onClick='toggleBox("Output-82220349", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-82220349" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-82220349">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_05_11_2019_03_19_20.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_05_11_2019_03_19_20.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_05_11_2019_03_19_20.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_05_11_2019_03_19_20.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>764</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC021_ValidateSameTieredBrokerFeeForNewandRenewal@d706f19</td></tr>
+<tr>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC022_ValidateDifferentTieredBrokerFeeForNewandRenewal.setup_tiered_brokerfee()'><b>setup_tiered_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC022_ValidateDifferentTieredBrokerFeeForNewandRenewal<br/>
+<a href="#Output-670170167" onClick='toggleBox("Output-670170167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-670170167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-670170167">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_05_11_2019_03_32_17.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_05_11_2019_03_32_17.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_05_11_2019_03_32_18.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_05_11_2019_03_32_18.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>774</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC022_ValidateDifferentTieredBrokerFeeForNewandRenewal@30b7c004</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal.setup_flat_brokerfee()'><b>setup_flat_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 1,000,000/1,000,000/1,000,000
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-RDEVWS10&apos;, ip: &apos;10.31.47.183&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at com.LegacyApplication.Utilities.GenericMethods.select_using_action(GenericMethods.java:396)
+	at com.LegacyApplication.PageMethods.GeneralLiabilityMethods.fill_GL_comparativeRater_info(GeneralLiabilityMethods.java:384)
+	at com.LegacyApplication.PageMethods.AutoRenewalBrokerFeeMethods.fill_comparative_rater_info(AutoRenewalBrokerFeeMethods.java:290)
+	at com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal.setup_flat_brokerfee(TC017_ValidateSameFlatBrokerFeeForNewandRenewal.java:34)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace778337881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace778337881'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 1,000,000/1,000,000/1,000,000
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-RDEVWS10&apos;, ip: &apos;10.31.47.183&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at com.LegacyApplication.Utilities.GenericMethods.select_using_action(GenericMethods.java:396)
+	at com.LegacyApplication.PageMethods.GeneralLiabilityMethods.fill_GL_comparativeRater_info(GeneralLiabilityMethods.java:384)
+	at com.LegacyApplication.PageMethods.AutoRenewalBrokerFeeMethods.fill_comparative_rater_info(AutoRenewalBrokerFeeMethods.java:290)
+	at com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal.setup_flat_brokerfee(TC017_ValidateSameFlatBrokerFeeForNewandRenewal.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>119</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal@7b227d8d</td></tr>
+<tr>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee.validate_nodefault_brokerfee()'><b>validate_nodefault_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-RDEVWS10&apos;, ip: &apos;10.31.47.183&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amaske\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53466}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 77.0.3865.120, webStorageEnabled: true}
+Session ID: 18971eb12614cec92b6b17497de18be3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:776)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_page_load(WaitMethods.java:28)
+	at com.LegacyApplication.Utilities.GenericMethods.navigate_to_url(GenericMethods.java:321)
+	at com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee.validate_nodefault_brokerfee(TC016_ValidateNoDefaultBrokerFee.java:66)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace675327654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace675327654'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-RDEVWS10&apos;, ip: &apos;10.31.47.183&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amaske\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53466}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 77.0.3865.120, webStorageEnabled: true}
+Session ID: 18971eb12614cec92b6b17497de18be3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:776)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_page_load(WaitMethods.java:28)
+	at com.LegacyApplication.Utilities.GenericMethods.navigate_to_url(GenericMethods.java:321)
+	at com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee.validate_nodefault_brokerfee(TC016_ValidateNoDefaultBrokerFee.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>416</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee@79efed2d</td></tr>
+<tr>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee.validate_nodefault_brokerfee()'><b>validate_nodefault_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.PageMethods.AutoRenewalBrokerFeeMethods.fill_bindingDoc_info(AutoRenewalBrokerFeeMethods.java:674)
+	at com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee.validate_nodefault_brokerfee(TC016_ValidateNoDefaultBrokerFee.java:98)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1279017066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1279017066'><pre>java.lang.NullPointerException
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.PageMethods.AutoRenewalBrokerFeeMethods.fill_bindingDoc_info(AutoRenewalBrokerFeeMethods.java:674)
+	at com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee.validate_nodefault_brokerfee(TC016_ValidateNoDefaultBrokerFee.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:958)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>826</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee@79efed2d</td></tr>
+</table><p>
+</body>
+</html>

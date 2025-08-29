@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [AutomationSuite-New WorkersComp]]">
+  <listeners>
+    <listener class-name="com.LegacyApplication.CustomListner.Listner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.ExecutionListner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.RetryListner"/>
+  </listeners>
+  <test name="End-End Test(failed)(failed)">
+    <classes>
+      <class name="WorkesrCom_UI.TC108_ReferalConditions">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- WorkesrCom_UI.TC108_ReferalConditions -->
+      <class name="WorkesrCom_UI.TC115_InsHistoryChangeScenarios">
+        <methods>
+          <include name="ts02_AMTrust_flow_verify_InsuranceThing"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- WorkesrCom_UI.TC115_InsHistoryChangeScenarios -->
+    </classes>
+  </test> <!-- End-End Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [AutomationSuite-New WorkersComp]] -->

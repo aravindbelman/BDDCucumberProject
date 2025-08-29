@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
+  <test name="Default test(failed)(failed)">
+    <classes>
+      <class name="WorkesrCom_UI.TC108_ReferalConditions">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="ts06_lossInfo_claim3_ReferVerify"/>
+          <include name="teardown"/>
+          <include name="ts04_additional_Address_ReferVerify"/>
+        </methods>
+      </class> <!-- WorkesrCom_UI.TC108_ReferalConditions -->
+    </classes>
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->

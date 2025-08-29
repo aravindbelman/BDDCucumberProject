@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [AutomationSuite]]">
+  <listeners>
+    <listener class-name="com.LegacyApplication.CustomListner.Listner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.ExecutionListner"/>
+    <listener class-name="com.LegacyApplication.CustomListner.RetryListner"/>
+  </listeners>
+  <test name="Smoke Test(failed)(failed)">
+    <classes>
+      <class name="com.LegacyApplication.SubmissionPage.TC009_VerifySpecificPageInfo">
+        <methods>
+          <include name="verify_specific_eligibility__information"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC009_VerifySpecificPageInfo -->
+      <class name="com.LegacyApplication.SubmissionPage.TC013_VerifyQAARatingWorkSheetData">
+        <methods>
+          <include name="review_QAArating_worksheet_details"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.LegacyApplication.SubmissionPage.TC013_VerifyQAARatingWorkSheetData -->
+    </classes>
+  </test> <!-- Smoke Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [AutomationSuite]] -->

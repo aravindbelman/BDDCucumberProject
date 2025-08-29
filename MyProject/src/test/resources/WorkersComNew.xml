@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite-New WorkersComp" >
+	<listeners>
+		<listener class-name="com.LegacyApplication.CustomListner.Listner"></listener>
+		<listener class-name="com.LegacyApplication.CustomListner.ExecutionListner"></listener>
+		<listener class-name="com.LegacyApplication.CustomListner.RetryListner"></listener>
+	</listeners>
+	<test name="End-End Test" preserve-order="true">
+	<classes>
+	    	<!-- <class name="WorkesrCom_UI.TC098_BusinessInfoPage1_WC" />
+			<class name="WorkesrCom_UI.TC099_BusinessInfoPage2_WC" />
+			<class name="WorkesrCom_UI.TC100_CoverageHistory_1_page3" />
+			<class name="WorkesrCom_UI.TC101_LossInformation_1_2_Page4" />
+			<class name="WorkesrCom_UI.TC102_classClodes_Page5" />
+			<class name="WorkesrCom_UI.TC103_OwnersAndOfficers_page6" />
+			<class name="WorkesrCom_UI.TC104_CreditOpportunity_Page7" />
+			<class name="WorkesrCom_UI.TC105_AdditionalInfo_Page8" />
+			<class name="WorkesrCom_UI.TC106_CarrierSelection_Page9" />
+			<class name="WorkesrCom_UI.TC107_OtherasCarrier" /> -->
+			<class name="WorkesrCom_UI.TC108_ReferalConditions" />
+			<class name="WorkesrCom_UI.TC110_HappyFlow" />
+			<class name="WorkesrCom_UI.TC114_Xmod_ReferalCheck" />
+			<class name="WorkesrCom_UI.TC115_InsHistoryChangeScenarios" />			
+	</classes>
+	</test> <!-- Test -->
+</suite> <!-- AutomationSuite -->

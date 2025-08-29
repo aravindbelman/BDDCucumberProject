@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Smoke Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 28 21:20:56 PST 2017</td>
+<td>Started on:</td><td>Wed May 09 00:28:58 PDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>379 seconds (379060 ms)</td>
+<tr><td>Total time:</td><td>2955 seconds (2955263 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,156 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.LegacyApplication.SubmissionPage.TC007_VerifyPriceIndicationInfo.verify_priceindicator_information()'><b>verify_priceindicator_information</b><br>Test class: com.LegacyApplication.SubmissionPage.TC007_VerifyPriceIndicationInfo<br/>
-<a href="#Output-1184694332" onClick='toggleBox("Output-1184694332", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1184694332" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1184694332">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_priceindicator_information_28_11_2017_09_24_50.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_priceindicator_information_28_11_2017_09_24_50.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //select[@id=&apos;Price_Indicator_Screen1_ddldeductible&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;ROC-RDEVWS07&apos;, ip: &apos;10.31.42.222&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\abelman\AppData\Local\Temp\rust_mozprofile.msow7qzL7oHF, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=10.0, moz:processID=8828.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: 38f015a6-6ab2-417d-bc34-060d33996c0c
-*** Element info: {Using=xpath, value=//select[@id=&apos;Price_Indicator_Screen1_ddldeductible&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getAttribute(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:52)
-	at com.LegacyApplication.Utilities.GenericMethods.get_selected_optn_frm_ele(GenericMethods.java:335)
-	at com.LegacyApplication.PageMethods.SubmissionPageMethods.verify_price_indicator_elements(SubmissionPageMethods.java:252)
-	at com.LegacyApplication.SubmissionPage.TC007_VerifyPriceIndicationInfo.verify_priceindicator_information(TC007_VerifyPriceIndicationInfo.java:27)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1184694332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1184694332'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //select[@id=&apos;Price_Indicator_Screen1_ddldeductible&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;ROC-RDEVWS07&apos;, ip: &apos;10.31.42.222&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\abelman\AppData\Local\Temp\rust_mozprofile.msow7qzL7oHF, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=10.0, moz:processID=8828.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: 38f015a6-6ab2-417d-bc34-060d33996c0c
-*** Element info: {Using=xpath, value=//select[@id=&apos;Price_Indicator_Screen1_ddldeductible&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getAttribute(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:52)
-	at com.LegacyApplication.Utilities.GenericMethods.get_selected_optn_frm_ele(GenericMethods.java:335)
-	at com.LegacyApplication.PageMethods.SubmissionPageMethods.verify_price_indicator_elements(SubmissionPageMethods.java:252)
-	at com.LegacyApplication.SubmissionPage.TC007_VerifyPriceIndicationInfo.verify_priceindicator_information(TC007_VerifyPriceIndicationInfo.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div></td>
-<td>42</td>
-<td>com.LegacyApplication.SubmissionPage.TC007_VerifyPriceIndicationInfo@23282c25</td></tr>
-<tr>
-<td title='com.LegacyApplication.SubmissionPage.TC011_VerifySubmissionDetailsInformation.verify_sold_submission_details_information()'><b>verify_sold_submission_details_information</b><br>Test class: com.LegacyApplication.SubmissionPage.TC011_VerifySubmissionDetailsInformation<br/>
-<a href="#Output-389247924" onClick='toggleBox("Output-389247924", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-389247924" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-389247924">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_sold_submission_details_information_28_11_2017_09_27_13.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_sold_submission_details_information_28_11_2017_09_27_13.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [test] but found [Test KCS]
-	at com.LegacyApplication.PageMethods.SubmissionPageMethods.verify_sold_submission_details_info(SubmissionPageMethods.java:728)
-	at com.LegacyApplication.SubmissionPage.TC011_VerifySubmissionDetailsInformation.verify_sold_submission_details_information(TC011_VerifySubmissionDetailsInformation.java:42)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace389247924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace389247924'><pre>java.lang.AssertionError: expected [test] but found [Test KCS]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.LegacyApplication.PageMethods.SubmissionPageMethods.verify_sold_submission_details_info(SubmissionPageMethods.java:728)
-	at com.LegacyApplication.SubmissionPage.TC011_VerifySubmissionDetailsInformation.verify_sold_submission_details_information(TC011_VerifySubmissionDetailsInformation.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div></td>
-<td>6</td>
-<td>com.LegacyApplication.SubmissionPage.TC011_VerifySubmissionDetailsInformation@358c99f5</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -225,125 +75,89 @@ Session ID: 38f015a6-6ab2-417d-bc34-060d33996c0c
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.LegacyApplication.LoginPage.TC002_LoginAsAdmin.login_as_admin()'><b>login_as_admin</b><br>Test class: com.LegacyApplication.LoginPage.TC002_LoginAsAdmin<br/>
-<a href="#Output-333693383" onClick='toggleBox("Output-333693383", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal.setup_flat_brokerfee()'><b>setup_flat_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal<br/>
+<a href="#Output-822359325" onClick='toggleBox("Output-822359325", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-333693383" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-333693383">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\login_as_admin_28_11_2017_09_21_40.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\login_as_admin_28_11_2017_09_21_40.png'height='100'width='100'/></a><br/>
+<a href="#Output-822359325" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-822359325">
+<a href='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_09_05_2018_12_43_01.png'><img src='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_09_05_2018_12_43_01.png'height='100'width='100'/></a><br/>
 </div>
 </td>
 <td></td>
-<td>19</td>
-<td>com.LegacyApplication.LoginPage.TC002_LoginAsAdmin@53ca01a2</td></tr>
+<td>413</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC017_ValidateSameFlatBrokerFeeForNewandRenewal@7692d9cc</td></tr>
 <tr>
-<td title='com.LegacyApplication.LoginPage.TC001_LoginAsAgency.login_as_agency()'><b>login_as_agency</b><br>Test class: com.LegacyApplication.LoginPage.TC001_LoginAsAgency<br/>
-<a href="#Output-524223214" onClick='toggleBox("Output-524223214", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC018_ValidateDifferentFlatBrokerFeeForNewandRenewal.setup_flat_brokerfee()'><b>setup_flat_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC018_ValidateDifferentFlatBrokerFeeForNewandRenewal<br/>
+<a href="#Output-87845070" onClick='toggleBox("Output-87845070", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-524223214" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-524223214">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\login_as_agency_28_11_2017_09_21_19.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\login_as_agency_28_11_2017_09_21_19.png'height='100'width='100'/></a><br/>
+<a href="#Output-87845070" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-87845070">
+<a href='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_09_05_2018_12_49_52.png'><img src='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_flat_brokerfee_09_05_2018_12_49_52.png'height='100'width='100'/></a><br/>
 </div>
 </td>
 <td></td>
-<td>22</td>
-<td>com.LegacyApplication.LoginPage.TC001_LoginAsAgency@14ec4505</td></tr>
+<td>405</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC018_ValidateDifferentFlatBrokerFeeForNewandRenewal@75f32542</td></tr>
 <tr>
-<td title='com.LegacyApplication.SubmissionPage.TC003_VerifyGlApplicationInfo.verify_GI_application_info()'><b>verify_GI_application_info</b><br>Test class: com.LegacyApplication.SubmissionPage.TC003_VerifyGlApplicationInfo<br/>
-<a href="#Output-774362927" onClick='toggleBox("Output-774362927", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC019_ValidateSamePercentageBrokerFeeForNewandRenewal.setup_percentage_brokerfee()'><b>setup_percentage_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC019_ValidateSamePercentageBrokerFeeForNewandRenewal<br/>
+<a href="#Output-337029130" onClick='toggleBox("Output-337029130", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-774362927" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-774362927">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_GI_application_info_28_11_2017_09_22_17.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_GI_application_info_28_11_2017_09_22_17.png'height='100'width='100'/></a><br/>
+<a href="#Output-337029130" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-337029130">
+<a href='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_09_05_2018_12_56_38.png'><img src='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_09_05_2018_12_56_38.png'height='100'width='100'/></a><br/>
 </div>
 </td>
 <td></td>
-<td>35</td>
-<td>com.LegacyApplication.SubmissionPage.TC003_VerifyGlApplicationInfo@3ee0fea4</td></tr>
+<td>401</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC019_ValidateSamePercentageBrokerFeeForNewandRenewal@7f1302d6</td></tr>
 <tr>
-<td title='com.LegacyApplication.SubmissionPage.TC010_VerifyApplicationPageInfo.verify_application_page_information()'><b>verify_application_page_information</b><br>Test class: com.LegacyApplication.SubmissionPage.TC010_VerifyApplicationPageInfo<br/>
-<a href="#Output-552416003" onClick='toggleBox("Output-552416003", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC020_ValidateDifferentPercentageBrokerFeeForNewandRenewal.setup_percentage_brokerfee()'><b>setup_percentage_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC020_ValidateDifferentPercentageBrokerFeeForNewandRenewal<br/>
+<a href="#Output-639769517" onClick='toggleBox("Output-639769517", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-552416003" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-552416003">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_application_page_information_28_11_2017_09_26_42.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_application_page_information_28_11_2017_09_26_42.png'height='100'width='100'/></a><br/>
+<a href="#Output-639769517" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-639769517">
+<a href='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_09_05_2018_01_03_30.png'><img src='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_percentage_brokerfee_09_05_2018_01_03_30.png'height='100'width='100'/></a><br/>
 </div>
 </td>
 <td></td>
-<td>35</td>
-<td>com.LegacyApplication.SubmissionPage.TC010_VerifyApplicationPageInfo@3b2da18f</td></tr>
+<td>407</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC020_ValidateDifferentPercentageBrokerFeeForNewandRenewal@43ee72e6</td></tr>
 <tr>
-<td title='com.LegacyApplication.SubmissionPage.TC008_VerifyCommonEligibilityInfo.verify_common_eligibility__information()'><b>verify_common_eligibility__information</b><br>Test class: com.LegacyApplication.SubmissionPage.TC008_VerifyCommonEligibilityInfo<br/>
-<a href="#Output-471004142" onClick='toggleBox("Output-471004142", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC021_ValidateSameTieredBrokerFeeForNewandRenewal.setup_tiered_brokerfee()'><b>setup_tiered_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC021_ValidateSameTieredBrokerFeeForNewandRenewal<br/>
+<a href="#Output-2130400175" onClick='toggleBox("Output-2130400175", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-471004142" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-471004142">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_common_eligibility__information_28_11_2017_09_25_27.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_common_eligibility__information_28_11_2017_09_25_27.png'height='100'width='100'/></a><br/>
+<a href="#Output-2130400175" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2130400175">
+<a href='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_09_05_2018_01_10_49.png'><img src='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_09_05_2018_01_10_49.png'height='100'width='100'/></a><br/>
 </div>
 </td>
 <td></td>
-<td>35</td>
-<td>com.LegacyApplication.SubmissionPage.TC008_VerifyCommonEligibilityInfo@7920ba90</td></tr>
+<td>433</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC021_ValidateSameTieredBrokerFeeForNewandRenewal@23529fee</td></tr>
 <tr>
-<td title='com.LegacyApplication.SubmissionPage.TC004_VerifyGlRatingData.verify_gi_rating_data()'><b>verify_gi_rating_data</b><br>Test class: com.LegacyApplication.SubmissionPage.TC004_VerifyGlRatingData<br/>
-<a href="#Output-374646930" onClick='toggleBox("Output-374646930", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC022_ValidateDifferentTieredBrokerFeeForNewandRenewal.setup_tiered_brokerfee()'><b>setup_tiered_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC022_ValidateDifferentTieredBrokerFeeForNewandRenewal<br/>
+<a href="#Output-28612052" onClick='toggleBox("Output-28612052", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-374646930" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-374646930">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_gi_rating_data_28_11_2017_09_22_56.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_gi_rating_data_28_11_2017_09_22_56.png'height='100'width='100'/></a><br/>
+<a href="#Output-28612052" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28612052">
+<a href='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_09_05_2018_01_18_08.png'><img src='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\setup_tiered_brokerfee_09_05_2018_01_18_08.png'height='100'width='100'/></a><br/>
 </div>
 </td>
 <td></td>
-<td>38</td>
-<td>com.LegacyApplication.SubmissionPage.TC004_VerifyGlRatingData@48524010</td></tr>
+<td>432</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC022_ValidateDifferentTieredBrokerFeeForNewandRenewal@4fe767f3</td></tr>
 <tr>
-<td title='com.LegacyApplication.SubmissionPage.TC005_VerifyHeaderTabs.verify_header_tabs()'><b>verify_header_tabs</b><br>Test class: com.LegacyApplication.SubmissionPage.TC005_VerifyHeaderTabs<br/>
-<a href="#Output-910504711" onClick='toggleBox("Output-910504711", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee.validate_nodefault_brokerfee()'><b>validate_nodefault_brokerfee</b><br>Test class: com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee<br/>
+<a href="#Output-2042917213" onClick='toggleBox("Output-2042917213", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-910504711" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-910504711">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_header_tabs_28_11_2017_09_23_30.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_header_tabs_28_11_2017_09_23_30.png'height='100'width='100'/></a><br/>
+<a href="#Output-2042917213" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2042917213">
+<a href='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\validate_nodefault_brokerfee_09_05_2018_12_36_01.png'><img src='C:\work\tfs\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\validate_nodefault_brokerfee_09_05_2018_12_36_01.png'height='100'width='100'/></a><br/>
 </div>
 </td>
 <td></td>
-<td>32</td>
-<td>com.LegacyApplication.SubmissionPage.TC005_VerifyHeaderTabs@4b168fa9</td></tr>
-<tr>
-<td title='com.LegacyApplication.SubmissionPage.TC006_VerifyOptionalCoverages.verify_optional_coverages()'><b>verify_optional_coverages</b><br>Test class: com.LegacyApplication.SubmissionPage.TC006_VerifyOptionalCoverages<br/>
-<a href="#Output-1940912369" onClick='toggleBox("Output-1940912369", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1940912369" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1940912369">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_optional_coverages_28_11_2017_09_24_06.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_optional_coverages_28_11_2017_09_24_06.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>34</td>
-<td>com.LegacyApplication.SubmissionPage.TC006_VerifyOptionalCoverages@1a84f40f</td></tr>
-<tr>
-<td title='com.LegacyApplication.SubmissionPage.TC009_VerifySpecificPageInfo.verify_specific_eligibility__information()'><b>verify_specific_eligibility__information</b><br>Test class: com.LegacyApplication.SubmissionPage.TC009_VerifySpecificPageInfo<br/>
-<a href="#Output-181326224" onClick='toggleBox("Output-181326224", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-181326224" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-181326224">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_specific_eligibility__information_28_11_2017_09_26_04.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_specific_eligibility__information_28_11_2017_09_26_04.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>35</td>
-<td>com.LegacyApplication.SubmissionPage.TC009_VerifySpecificPageInfo@6b419da</td></tr>
-<tr>
-<td title='com.LegacyApplication.SubmissionPage.TC011_VerifySubmissionDetailsInformation.verify_unsold_submission_details_information()'><b>verify_unsold_submission_details_information</b><br>Test class: com.LegacyApplication.SubmissionPage.TC011_VerifySubmissionDetailsInformation<br/>
-<a href="#Output-513279161" onClick='toggleBox("Output-513279161", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-513279161" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-513279161">
-<a href='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_unsold_submission_details_information_28_11_2017_09_27_07.png'><img src='C:\Users\abelman\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_unsold_submission_details_information_28_11_2017_09_27_07.png'height='100'width='100'/></a><br/>
-</div>
-</td>
-<td></td>
-<td>23</td>
-<td>com.LegacyApplication.SubmissionPage.TC011_VerifySubmissionDetailsInformation@358c99f5</td></tr>
+<td>423</td>
+<td>com.LegacyApplication.AutoRenewBrokerFee.TC016_ValidateNoDefaultBrokerFee@2a32de6c</td></tr>
 </table><p>
 </body>
 </html>

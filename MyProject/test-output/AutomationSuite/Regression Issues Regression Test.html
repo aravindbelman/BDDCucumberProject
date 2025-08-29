@@ -1,0 +1,1056 @@
+<html>
+<head>
+<title>TestNG:  Regression Issues Regression Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression Issues Regression Test</h2><table border='1' align="center">
+<tr>
+<<<<<<< HEAD
+<td>Tests passed/Failed/Skipped:</td><td>7/3/6</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 10 21:47:31 PST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1368 seconds (1368170 ms)</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>8/2/4</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 18 01:00:32 PST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1235 seconds (1235097 ms)</td>
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<<<<<<< HEAD
+<td title='com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR.verify_GABR_UnderWriterCheckListError_fromAdmin()'><b>verify_GABR_UnderWriterCheckListError_fromAdmin</b><br>Test class: com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR<br/>
+<a href="#Output-980066029" onClick='toggleBox("Output-980066029", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-980066029" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-980066029">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_UnderWriterCheckListError_fromAdmin_10_12_2018_09_59_38.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_UnderWriterCheckListError_fromAdmin_10_12_2018_09_59_38.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_UnderWriterCheckListError_fromAdmin_10_12_2018_09_59_38.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_UnderWriterCheckListError_fromAdmin_10_12_2018_09_59_38.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (ee136d51f9bda345309f3b7e70b24cc6)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58579}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: ee136d51f9bda345309f3b7e70b24cc6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR.verify_GABR_UnderWriterCheckListError_fromAdmin(TC053_VerifyUnderwriterChecklistError_GABR.java:44)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace980066029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace980066029'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (ee136d51f9bda345309f3b7e70b24cc6)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58579}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: ee136d51f9bda345309f3b7e70b24cc6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR.verify_GABR_UnderWriterCheckListError_fromAdmin(TC053_VerifyUnderwriterChecklistError_GABR.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>107</td>
+<td>com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR@1817d444</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips()'><b>verify_GABR_submissionAcceptsInvalidZips</b><br>Test class: com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP<br/>
+<a href="#Output-761247482" onClick='toggleBox("Output-761247482", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-761247482" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-761247482">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionAcceptsInvalidZips_10_12_2018_10_05_02.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionAcceptsInvalidZips_10_12_2018_10_05_02.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionAcceptsInvalidZips_10_12_2018_10_05_02.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionAcceptsInvalidZips_10_12_2018_10_05_02.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (406bc50724dbe8b61c06c51bc2c8f035)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58759}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 406bc50724dbe8b61c06c51bc2c8f035
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace761247482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace761247482'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (406bc50724dbe8b61c06c51bc2c8f035)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58759}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 406bc50724dbe8b61c06c51bc2c8f035
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>105</td>
+<td>com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP@6ca8564a</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError()'><b>verify_GABR_submissionRenewalLetterError</b><br>Test class: com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter<br/>
+<a href="#Output-1787111579" onClick='toggleBox("Output-1787111579", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1787111579" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1787111579">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionRenewalLetterError_10_12_2018_10_10_17.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionRenewalLetterError_10_12_2018_10_10_17.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionRenewalLetterError_10_12_2018_10_10_18.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionRenewalLetterError_10_12_2018_10_10_18.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (312d42cc319c7e3f154b65a67566f00a)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+=======
+<td title='com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips()'><b>verify_GABR_submissionAcceptsInvalidZips</b><br>Test class: com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP<br/>
+<a href="#Output-1415487253" onClick='toggleBox("Output-1415487253", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1415487253" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1415487253">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionAcceptsInvalidZips_18_12_2018_01_15_43.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionAcceptsInvalidZips_18_12_2018_01_15_43.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionAcceptsInvalidZips_18_12_2018_01_15_43.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionAcceptsInvalidZips_18_12_2018_01_15_43.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (de39ac018a3576f22520ecfc0a56c2f9)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58936}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 312d42cc319c7e3f154b65a67566f00a
+=======
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16323}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: de39ac018a3576f22520ecfc0a56c2f9
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+<<<<<<< HEAD
+	at com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError(TC055_VerifyGABR_RenewalLetter.java:44)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1787111579", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1787111579'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (312d42cc319c7e3f154b65a67566f00a)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+=======
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1415487253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1415487253'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (de39ac018a3576f22520ecfc0a56c2f9)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58936}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 312d42cc319c7e3f154b65a67566f00a
+=======
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16323}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: de39ac018a3576f22520ecfc0a56c2f9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>109</td>
+<td>com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP@3f197a46</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError()'><b>verify_GABR_submissionRenewalLetterError</b><br>Test class: com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter<br/>
+<a href="#Output-321218380" onClick='toggleBox("Output-321218380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-321218380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-321218380">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionRenewalLetterError_18_12_2018_01_21_05.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionRenewalLetterError_18_12_2018_01_21_05.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionRenewalLetterError_18_12_2018_01_21_05.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Failure_Screenshots\verify_GABR_submissionRenewalLetterError_18_12_2018_01_21_05.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (74cbcce81092c5d94ac923b31f3130f8)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ROC-RDEVWS07&apos;, ip: &apos;10.31.42.222&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16514}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 74cbcce81092c5d94ac923b31f3130f8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError(TC055_VerifyGABR_RenewalLetter.java:44)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace321218380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace321218380'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (74cbcce81092c5d94ac923b31f3130f8)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ROC-RDEVWS07&apos;, ip: &apos;10.31.42.222&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16514}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 74cbcce81092c5d94ac923b31f3130f8
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError(TC055_VerifyGABR_RenewalLetter.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>105</td>
+<<<<<<< HEAD
+<td>com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter@50b472aa</td></tr>
+=======
+<td>com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter@636be97c</td></tr>
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC049_VerifyAgencyMainMenuTkt.AgencyManiMenuTkts_Marketing_Link()'><b>AgencyManiMenuTkts_Marketing_Link</b><br>Test class: com.LegacyApplication.RegressionIssues.TC049_VerifyAgencyMainMenuTkt<br/>
+<<<<<<< HEAD
+<a href="#Output-1729084493" onClick='toggleBox("Output-1729084493", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1729084493" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1729084493">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\AgencyManiMenuTkts_Marketing_Link_10_12_2018_09_51_34.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\AgencyManiMenuTkts_Marketing_Link_10_12_2018_09_51_34.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\AgencyManiMenuTkts_Marketing_Link_10_12_2018_09_51_35.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\AgencyManiMenuTkts_Marketing_Link_10_12_2018_09_51_35.png'height='100'width='100'/></a><br/>
+=======
+<a href="#Output-158724937" onClick='toggleBox("Output-158724937", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-158724937" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-158724937">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\AgencyManiMenuTkts_Marketing_Link_18_12_2018_01_05_05.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\AgencyManiMenuTkts_Marketing_Link_18_12_2018_01_05_05.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\AgencyManiMenuTkts_Marketing_Link_18_12_2018_01_05_06.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\AgencyManiMenuTkts_Marketing_Link_18_12_2018_01_05_06.png'height='100'width='100'/></a><br/>
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+</div>
+</td>
+<td></td>
+<td>22</td>
+<<<<<<< HEAD
+<td>com.LegacyApplication.RegressionIssues.TC049_VerifyAgencyMainMenuTkt@5e82df6a</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC050_VerifyApplicationpage_QCA.applicationpage_QCA()'><b>applicationpage_QCA</b><br>Test class: com.LegacyApplication.RegressionIssues.TC050_VerifyApplicationpage_QCA<br/>
+<a href="#Output-426717012" onClick='toggleBox("Output-426717012", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-426717012" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-426717012">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_QCA_10_12_2018_09_52_14.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_QCA_10_12_2018_09_52_14.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_QCA_10_12_2018_09_52_14.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_QCA_10_12_2018_09_52_14.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.LegacyApplication.RegressionIssues.TC050_VerifyApplicationpage_QCA@3f197a46</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC051_VerifyApplicationpage_VIN_validation.applicationpage_VIN_Validation_QCA()'><b>applicationpage_VIN_Validation_QCA</b><br>Test class: com.LegacyApplication.RegressionIssues.TC051_VerifyApplicationpage_VIN_validation<br/>
+<a href="#Output-831311265" onClick='toggleBox("Output-831311265", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-831311265" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-831311265">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_VIN_Validation_QCA_10_12_2018_09_53_28.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_VIN_Validation_QCA_10_12_2018_09_53_28.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_VIN_Validation_QCA_10_12_2018_09_53_28.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_VIN_Validation_QCA_10_12_2018_09_53_28.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>com.LegacyApplication.RegressionIssues.TC051_VerifyApplicationpage_VIN_validation@636be97c</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC048_VerifyVictoryCommercialAuto.createQCA()'><b>createQCA</b><br>Test class: com.LegacyApplication.RegressionIssues.TC048_VerifyVictoryCommercialAuto<br/>
+<a href="#Output-159527831" onClick='toggleBox("Output-159527831", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-159527831" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-159527831">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\createQCA_10_12_2018_09_51_10.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\createQCA_10_12_2018_09_51_10.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\createQCA_10_12_2018_09_51_10.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\createQCA_10_12_2018_09_51_10.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>160</td>
+<td>com.LegacyApplication.RegressionIssues.TC048_VerifyVictoryCommercialAuto@7a69b07</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC044_VerifyAddingNewMasterAgency.verify_add_new_masterAgency()'><b>verify_add_new_masterAgency</b><br>Test class: com.LegacyApplication.RegressionIssues.TC044_VerifyAddingNewMasterAgency<br/>
+<a href="#Output-119755698" onClick='toggleBox("Output-119755698", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-119755698" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-119755698">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_add_new_masterAgency_10_12_2018_09_48_27.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_add_new_masterAgency_10_12_2018_09_48_27.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_add_new_masterAgency_10_12_2018_09_48_28.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_add_new_masterAgency_10_12_2018_09_48_28.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.LegacyApplication.RegressionIssues.TC044_VerifyAddingNewMasterAgency@1139b2f3</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC043_ValidateAgencyExpirationDateField.verify_expirationdate_field()'><b>verify_expirationdate_field</b><br>Test class: com.LegacyApplication.RegressionIssues.TC043_ValidateAgencyExpirationDateField<br/>
+<a href="#Output-283338301" onClick='toggleBox("Output-283338301", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-283338301" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-283338301">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_expirationdate_field_10_12_2018_09_48_06.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_expirationdate_field_10_12_2018_09_48_06.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_expirationdate_field_10_12_2018_09_48_07.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_expirationdate_field_10_12_2018_09_48_07.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.LegacyApplication.RegressionIssues.TC043_ValidateAgencyExpirationDateField@1ddf84b8</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC052_VerifyZipCodeWhileFilling_IM_QNI.verify_zipcode_IM()'><b>verify_zipcode_IM</b><br>Test class: com.LegacyApplication.RegressionIssues.TC052_VerifyZipCodeWhileFilling_IM_QNI<br/>
+<a href="#Output-2119995090" onClick='toggleBox("Output-2119995090", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2119995090" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2119995090">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_zipcode_IM_10_12_2018_09_54_11.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_zipcode_IM_10_12_2018_09_54_11.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_zipcode_IM_10_12_2018_09_54_12.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_zipcode_IM_10_12_2018_09_54_12.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.LegacyApplication.RegressionIssues.TC052_VerifyZipCodeWhileFilling_IM_QNI@50a638b5</td></tr>
+=======
+<td>com.LegacyApplication.RegressionIssues.TC049_VerifyAgencyMainMenuTkt@5c30a9b0</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC050_VerifyApplicationpage_QCA.applicationpage_QCA()'><b>applicationpage_QCA</b><br>Test class: com.LegacyApplication.RegressionIssues.TC050_VerifyApplicationpage_QCA<br/>
+<a href="#Output-421115312" onClick='toggleBox("Output-421115312", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-421115312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-421115312">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_QCA_18_12_2018_01_05_49.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_QCA_18_12_2018_01_05_49.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_QCA_18_12_2018_01_05_49.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_QCA_18_12_2018_01_05_49.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.LegacyApplication.RegressionIssues.TC050_VerifyApplicationpage_QCA@1ddf84b8</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC051_VerifyApplicationpage_VIN_validation.applicationpage_VIN_Validation_QCA()'><b>applicationpage_VIN_Validation_QCA</b><br>Test class: com.LegacyApplication.RegressionIssues.TC051_VerifyApplicationpage_VIN_validation<br/>
+<a href="#Output-1638747011" onClick='toggleBox("Output-1638747011", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1638747011" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1638747011">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_VIN_Validation_QCA_18_12_2018_01_07_13.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_VIN_Validation_QCA_18_12_2018_01_07_13.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_VIN_Validation_QCA_18_12_2018_01_07_13.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\applicationpage_VIN_Validation_QCA_18_12_2018_01_07_13.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>82</td>
+<td>com.LegacyApplication.RegressionIssues.TC051_VerifyApplicationpage_VIN_validation@1139b2f3</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC048_VerifyVictoryCommercialAuto.createQCA()'><b>createQCA</b><br>Test class: com.LegacyApplication.RegressionIssues.TC048_VerifyVictoryCommercialAuto<br/>
+<a href="#Output-857245356" onClick='toggleBox("Output-857245356", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-857245356" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-857245356">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\createQCA_18_12_2018_01_04_40.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\createQCA_18_12_2018_01_04_40.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\createQCA_18_12_2018_01_04_41.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\createQCA_18_12_2018_01_04_41.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>183</td>
+<td>com.LegacyApplication.RegressionIssues.TC048_VerifyVictoryCommercialAuto@635eaaf1</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR.verify_GABR_UnderWriterCheckListError_fromAdmin()'><b>verify_GABR_UnderWriterCheckListError_fromAdmin</b><br>Test class: com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR<br/>
+<a href="#Output-1268720930" onClick='toggleBox("Output-1268720930", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1268720930" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1268720930">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_GABR_UnderWriterCheckListError_fromAdmin_18_12_2018_01_10_06.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_GABR_UnderWriterCheckListError_fromAdmin_18_12_2018_01_10_06.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_GABR_UnderWriterCheckListError_fromAdmin_18_12_2018_01_10_07.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_GABR_UnderWriterCheckListError_fromAdmin_18_12_2018_01_10_07.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>119</td>
+<td>com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR@5e82df6a</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC044_VerifyAddingNewMasterAgency.verify_add_new_masterAgency()'><b>verify_add_new_masterAgency</b><br>Test class: com.LegacyApplication.RegressionIssues.TC044_VerifyAddingNewMasterAgency<br/>
+<a href="#Output-1107168664" onClick='toggleBox("Output-1107168664", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1107168664" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1107168664">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_add_new_masterAgency_18_12_2018_01_01_35.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_add_new_masterAgency_18_12_2018_01_01_35.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_add_new_masterAgency_18_12_2018_01_01_35.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_add_new_masterAgency_18_12_2018_01_01_35.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.LegacyApplication.RegressionIssues.TC044_VerifyAddingNewMasterAgency@31d7b7bf</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC043_ValidateAgencyExpirationDateField.verify_expirationdate_field()'><b>verify_expirationdate_field</b><br>Test class: com.LegacyApplication.RegressionIssues.TC043_ValidateAgencyExpirationDateField<br/>
+<a href="#Output-1922191129" onClick='toggleBox("Output-1922191129", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1922191129" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1922191129">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_expirationdate_field_18_12_2018_01_01_11.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_expirationdate_field_18_12_2018_01_01_11.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_expirationdate_field_18_12_2018_01_01_11.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_expirationdate_field_18_12_2018_01_01_11.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.LegacyApplication.RegressionIssues.TC043_ValidateAgencyExpirationDateField@30ee2816</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC052_VerifyZipCodeWhileFilling_IM_QNI.verify_zipcode_IM()'><b>verify_zipcode_IM</b><br>Test class: com.LegacyApplication.RegressionIssues.TC052_VerifyZipCodeWhileFilling_IM_QNI<br/>
+<a href="#Output-313820632" onClick='toggleBox("Output-313820632", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-313820632" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-313820632">
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_zipcode_IM_18_12_2018_01_08_03.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_zipcode_IM_18_12_2018_01_08_03.png'height='100'width='100'/></a><br/>
+<a href='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_zipcode_IM_18_12_2018_01_08_04.png'><img src='C:\BTIS\directgl\Testing\BTIS_Application\LegacyApplication\src\main\java\com\LegacyApplication\Success_Screenshots\verify_zipcode_IM_18_12_2018_01_08_04.png'height='100'width='100'/></a><br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>com.LegacyApplication.RegressionIssues.TC052_VerifyZipCodeWhileFilling_IM_QNI@7a69b07</td></tr>
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<<<<<<< HEAD
+<td title='com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR.verify_GABR_UnderWriterCheckListError_fromAdmin()'><b>verify_GABR_UnderWriterCheckListError_fromAdmin</b><br>Test class: com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (b80e617da94dd393ca4ccb0f7f998c01)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+=======
+<td title='com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips()'><b>verify_GABR_submissionAcceptsInvalidZips</b><br>Test class: com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (8d15b2a6313d0e4db066eda184259d01)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58460}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: b80e617da94dd393ca4ccb0f7f998c01
+=======
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16199}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 8d15b2a6313d0e4db066eda184259d01
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+<<<<<<< HEAD
+	at com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR.verify_GABR_UnderWriterCheckListError_fromAdmin(TC053_VerifyUnderwriterChecklistError_GABR.java:44)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33903478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33903478'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (b80e617da94dd393ca4ccb0f7f998c01)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+=======
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1385611666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1385611666'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (8d15b2a6313d0e4db066eda184259d01)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58460}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: b80e617da94dd393ca4ccb0f7f998c01
+=======
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16199}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 8d15b2a6313d0e4db066eda184259d01
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+<<<<<<< HEAD
+	at com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR.verify_GABR_UnderWriterCheckListError_fromAdmin(TC053_VerifyUnderwriterChecklistError_GABR.java:44)
+=======
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<<<<<<< HEAD
+<td>106</td>
+<td>com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR@1817d444</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR.verify_GABR_UnderWriterCheckListError_fromAdmin()'><b>verify_GABR_UnderWriterCheckListError_fromAdmin</b><br>Test class: com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (0bcb0c5c8e3dc1d2fc2360c754825521)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58519}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 0bcb0c5c8e3dc1d2fc2360c754825521
+=======
+<td>112</td>
+<td>com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP@3f197a46</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips()'><b>verify_GABR_submissionAcceptsInvalidZips</b><br>Test class: com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (910eff8595f03dcbc3503cd56b0913dd)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ROC-RDEVWS07&apos;, ip: &apos;10.31.42.222&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16264}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 910eff8595f03dcbc3503cd56b0913dd
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+<<<<<<< HEAD
+	at com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR.verify_GABR_UnderWriterCheckListError_fromAdmin(TC053_VerifyUnderwriterChecklistError_GABR.java:44)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1521242077", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1521242077'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (0bcb0c5c8e3dc1d2fc2360c754825521)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+=======
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2077464055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2077464055'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (910eff8595f03dcbc3503cd56b0913dd)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58519}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 0bcb0c5c8e3dc1d2fc2360c754825521
+=======
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16264}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 910eff8595f03dcbc3503cd56b0913dd
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+<<<<<<< HEAD
+	at com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR.verify_GABR_UnderWriterCheckListError_fromAdmin(TC053_VerifyUnderwriterChecklistError_GABR.java:44)
+=======
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<<<<<<< HEAD
+<td>105</td>
+<td>com.LegacyApplication.RegressionIssues.TC053_VerifyUnderwriterChecklistError_GABR@1817d444</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips()'><b>verify_GABR_submissionAcceptsInvalidZips</b><br>Test class: com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (0a4fb23648450cd17260e64c2655bd0a)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58640}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 0a4fb23648450cd17260e64c2655bd0a
+=======
+<td>110</td>
+<td>com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP@3f197a46</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError()'><b>verify_GABR_submissionRenewalLetterError</b><br>Test class: com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (859bdb7b335699f7fcf2c4b0ae510d8a)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ROC-RDEVWS07&apos;, ip: &apos;10.31.42.222&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16390}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 859bdb7b335699f7fcf2c4b0ae510d8a
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+<<<<<<< HEAD
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace528294003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace528294003'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (0a4fb23648450cd17260e64c2655bd0a)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+=======
+	at com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError(TC055_VerifyGABR_RenewalLetter.java:44)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace836397910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace836397910'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (859bdb7b335699f7fcf2c4b0ae510d8a)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ROC-RDEVWS07&apos;, ip: &apos;10.31.42.222&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16390}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 859bdb7b335699f7fcf2c4b0ae510d8a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError(TC055_VerifyGABR_RenewalLetter.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>106</td>
+<td>com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter@636be97c</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError()'><b>verify_GABR_submissionRenewalLetterError</b><br>Test class: com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (2f7d6658abc82cc986271760f320f369)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ROC-RDEVWS07&apos;, ip: &apos;10.31.42.222&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16450}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 2f7d6658abc82cc986271760f320f369
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError(TC055_VerifyGABR_RenewalLetter.java:44)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1564198243", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1564198243'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (2f7d6658abc82cc986271760f320f369)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58640}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 0a4fb23648450cd17260e64c2655bd0a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>106</td>
+<td>com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP@6ca8564a</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips()'><b>verify_GABR_submissionAcceptsInvalidZips</b><br>Test class: com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (35da7b1a2a28de870cca4703dda24a6b)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58700}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 35da7b1a2a28de870cca4703dda24a6b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1004501759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1004501759'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (35da7b1a2a28de870cca4703dda24a6b)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58700}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 35da7b1a2a28de870cca4703dda24a6b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP.verify_GABR_submissionAcceptsInvalidZips(TC054_VerifyGABRAcceptInvalid_ZIP.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>107</td>
+<td>com.LegacyApplication.RegressionIssues.TC054_VerifyGABRAcceptInvalid_ZIP@6ca8564a</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError()'><b>verify_GABR_submissionRenewalLetterError</b><br>Test class: com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (173a03c6156a3f9d7e5e667ef4e34d77)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58818}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 173a03c6156a3f9d7e5e667ef4e34d77
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError(TC055_VerifyGABR_RenewalLetter.java:44)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1820146943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1820146943'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (173a03c6156a3f9d7e5e667ef4e34d77)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58818}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 173a03c6156a3f9d7e5e667ef4e34d77
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError(TC055_VerifyGABR_RenewalLetter.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>102</td>
+<td>com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter@50b472aa</td></tr>
+<tr>
+<td title='com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError()'><b>verify_GABR_submissionRenewalLetterError</b><br>Test class: com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (9c9646996fc0b534ce00f1608e73f342)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58877}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 9c9646996fc0b534ce00f1608e73f342
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError(TC055_VerifyGABR_RenewalLetter.java:44)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace117324261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace117324261'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (9c9646996fc0b534ce00f1608e73f342)] -&gt; xpath: //input[@id=&apos;btnSubmit&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MCC-TESTPC&apos;, ip: &apos;10.31.47.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\dhuynh\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58877}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 9c9646996fc0b534ce00f1608e73f342
+=======
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\abelman\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:16450}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: accept, unhandledPromptBehavior: accept, version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 2f7d6658abc82cc986271760f320f369
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.LegacyApplication.Utilities.WaitMethods.wait_for_element_present(WaitMethods.java:39)
+	at com.LegacyApplication.Utilities.GenericMethods.click_Element_Using_JS(GenericMethods.java:142)
+	at com.LegacyApplication.PageMethods.BuildersRiskMethods.clickon_finalReviewSubmit_toSubmitSubmission(BuildersRiskMethods.java:283)
+	at com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter.verify_GABR_submissionRenewalLetterError(TC055_VerifyGABR_RenewalLetter.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+=======
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<<<<<<< HEAD
+<td>102</td>
+<td>com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter@50b472aa</td></tr>
+=======
+<td>105</td>
+<td>com.LegacyApplication.RegressionIssues.TC055_VerifyGABR_RenewalLetter@636be97c</td></tr>
+>>>>>>> 1e4144cfa49c5a2d36581fa3d56bc9f96d6659bc
+</table><p>
+</body>
+</html>

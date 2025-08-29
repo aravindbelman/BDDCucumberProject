@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite">
+	<listeners>
+		<listener class-name="com.LegacyApplication.CustomListner.Listner"></listener>
+		<listener class-name="com.LegacyApplication.CustomListner.ExecutionListner"></listener>
+		<listener class-name="com.LegacyApplication.CustomListner.RetryListner"></listener>
+	</listeners>
+	<test name="End-End Test" preserve-order="true">
+	<classes>
+	         <class name="com.LegacyApplication.CreateSubmissions.TC033_CreateQAAsubmission"/> 
+			 <class name="com.LegacyApplication.CreateSubmissions.TC034_CreateQANsubmission" /> 
+		     <class name="com.LegacyApplication.CreateSubmissions.TC035_CreateQACsubmission" /> 
+		     <class name="com.LegacyApplication.CreateSubmissions.TC036_CreateQESsubmission" />
+			 <class name="com.LegacyApplication.CreateSubmissions.TC047_CreateVoctoryContactorBondsSubmission" />
+			 <class name="com.LegacyApplication.CreateSubmissions.TC048_CreateVictoryCommercialAutoSubmission" />
+			 <class name="com.LegacyApplication.CreateSubmissions.TC056_CreateExcessRaterQEXR" />
+			 <class name="com.LegacyApplication.CreateSubmissions.TC089_CreateGABRSubmission" />
+			 <class name="com.LegacyApplication.CreateSubmissions.TC090_CreateInlandMarineSubmission" />
+			 <class name="com.LegacyApplication.CreateSubmissions.TC091_CreateWorkersCompSubmission" />
+	</classes>
+	</test> <!-- Test -->
+</suite> <!-- AutomationSuite -->
