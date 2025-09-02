@@ -26,7 +26,7 @@ jobs:
 
       # Step 3: Build & run tests
       - name: Build with Maven
-        run: mvn -f MyProject/pom.xml clean test
+        run: mvn -f MyProject/pom.xml clean test -Dheadless=true
 
       # Step 4: Upload test reports as artifacts (use v4)
       - name: Upload test reports

@@ -16,24 +16,24 @@ public class DriverFactory {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");
 
-            // Headless mode for CI/CD (GitHub Actions Linux)
-            options.addArguments("--headless=new");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage");
-
-            try {
-                // Create a unique temporary directory for user data
-                Path tempDir = Files.createTempDirectory("chrome-user-data");
-                options.addArguments("--user-data-dir=" + tempDir.toString());
-            } catch (Exception e) {
-                e.printStackTrace();
+            // Check system property
+            String headless = System.getProperty("headless", "false");
+            if (headless.equalsIgnoreCase("true")) {
+                options.addArguments("--headless=new");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                try {
+                    Path tempDir = Files.createTempDirectory("chrome-user-data");
+                    options.addArguments("--user-data-dir=" + tempDir.toString());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
 
             driver = new ChromeDriver(options);
         }
         return driver;
     }
-
         public static void quitDriver() {
             if (driver != null) {
                 driver.quit();
