@@ -2,9 +2,9 @@ name: CI - BDD Cucumber TestNG
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "Aravind_Cucumber" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "Aravind_Cucumber" ]
   workflow_dispatch: # allows manual trigger
 
 jobs:
