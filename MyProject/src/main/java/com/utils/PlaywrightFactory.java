@@ -11,8 +11,9 @@ public class PlaywrightFactory {
     public static Page getPage() {
         if (page == null) {
             playwright = Playwright.create();
+            boolean headless = ConfigManager.isHeadless();
             browser = playwright.chromium().launch(
-                    new BrowserType.LaunchOptions().setHeadless(false)
+                    new BrowserType.LaunchOptions().setHeadless(headless)
             );
 
             context = browser.newContext();

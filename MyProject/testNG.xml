@@ -2,7 +2,7 @@
 <suite name="Suite">
 	<test name="CucumberTests">
 		<classes>
-			<class name="com.MyProject.runners.TestRunner"/>
+			<class name="com.MyProject.runners.SeleniumTestRunner"/>
 		</classes>
 	</test>
 </suite>
