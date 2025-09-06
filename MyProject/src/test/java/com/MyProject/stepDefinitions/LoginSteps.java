@@ -1,6 +1,6 @@
 package com.MyProject.stepDefinitions;
 
-import com.MyProject.hooks.Hooks;
+import com.MyProject.hooks.SeleniumHooks;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,7 +10,7 @@ import saucedemo.PageMethods;
 import static org.testng.Assert.assertTrue;
 
 public class LoginSteps {
-    WebDriver driver = Hooks.getDriver();
+    WebDriver driver = SeleniumHooks.getDriver();
     PageMethods pg= new PageMethods(driver);
 
     @Given("user opens the browser")

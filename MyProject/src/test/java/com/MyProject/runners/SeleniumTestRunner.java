@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
             tags = "@MultiUser and @selenium",
             monochrome = true
     )
-    public class TestRunner extends AbstractTestNGCucumberTests {
+    public class SeleniumTestRunner extends AbstractTestNGCucumberTests {
         @Override
         @DataProvider(parallel = false)
         public Object[][] scenarios() {
