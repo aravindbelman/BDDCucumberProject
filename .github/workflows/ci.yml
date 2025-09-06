@@ -5,11 +5,13 @@ on:
     branches: [ "Aravind_Cucumber" ]
   pull_request:
     branches: [ "Aravind_Cucumber" ]
-  workflow_dispatch: # allows manual trigger
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      HEADLESS: true   # This signals headless mode for both Selenium & Playwright
 
     steps:
       # Step 1: Checkout repository
@@ -24,19 +26,19 @@ jobs:
           java-version: '21'
           cache: maven
 
-      # Step 3: Build & run tests
-      - name: Build with Maven
-        run: mvn -f MyProject/pom.xml clean test -Dheadless=true
+      # Step 3: Build & run tests in headless mode
+      - name: Build & run tests
+        run: xvfb-run mvn -f MyProject/pom.xml clean test -Dheadless=true
 
-      # Step 4: Upload test reports as artifacts (use v4)
+      # Step 4: Upload test reports
       - name: Upload test reports
-        if: always() # ensures reports are uploaded even if tests fail
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-reports
           path: target/surefire-reports/
 
-      # Step 5: Upload Cucumber HTML report (if available)
+      # Step 5: Upload Cucumber HTML Report
       - name: Upload Cucumber HTML Report
         if: always()
         uses: actions/upload-artifact@v4
