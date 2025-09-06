@@ -9,12 +9,12 @@ public class Hooks {
 
     private static WebDriver driver;
 
-    @Before
+    @Before("@selenium")
     public void setUp() {
         driver = DriverFactory.getDriver();
     }
 
-    @After
+    @After("@selenium")
     public void tearDown() {
         DriverFactory.quitDriver();
     }

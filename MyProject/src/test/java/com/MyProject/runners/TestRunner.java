@@ -8,11 +8,10 @@ import org.testng.annotations.DataProvider;
             features = "src/test/java/com/MyProject/features",
             glue = {"com.MyProject.stepDefinitions", "com.MyProject.hooks"},
             plugin = {"pretty", "html:target/cucumber-report.html"},
-            tags = "@MultiUser",
+            tags = "@MultiUser and @selenium",
             monochrome = true
     )
     public class TestRunner extends AbstractTestNGCucumberTests {
-
         @Override
         @DataProvider(parallel = false)
         public Object[][] scenarios() {
