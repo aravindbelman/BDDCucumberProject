@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f73d035b-e5ee-4a99-90e7-e652e38954f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_playwright_driver_1_47_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_playwright_driver_bundle_1_47_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_playwright_playwright_1_47_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/PlaywrightFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/saucedemowithplaywright/PageLocators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/saucedemowithplaywright/PageMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/PlaywrightHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/runners/PlaywrightTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/stepDefinitions/PlaywrightLoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cucumber.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cucumber.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images_Sikuli/AdoptnSignPop.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images_Sikuli/ContinueP1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images_Sikuli/FinishLast.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images_Sikuli/Iagree.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images_Sikuli/RenewalCreated_DirectBill_NonCA.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images_Sikuli/SignRequiredP2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images_Sikuli/StartP2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images_Sikuli/agreebtn.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images_Sikuli/okP2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jars/sqljdbc42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/IEDriverServer.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/MicrosoftWebDriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/geckodriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyProject/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyProject/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/runners/TestRunner.java" afterDir="false" />
-    </list>
+    <list default="true" id="f73d035b-e5ee-4a99-90e7-e652e38954f1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +64,7 @@
       <recent name="com.MyProject.runners" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRunner (1)">
+  <component name="RunManager" selected="TestNG.TestRunner">
     <configuration name="ReverseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyPractice.ReverseArray" />
       <module name="JavaPractice" />
@@ -135,32 +104,25 @@
     </configuration>
     <configuration name="PlaywrightTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Cucumber" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.MyProject.runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.MyProject.runners" />
       <option name="MAIN_CLASS_NAME" value="com.MyProject.runners.PlaywrightTestRunner" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRunner (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Cucumber" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.MyProject.runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.MyProject.runners" />
-      <option name="MAIN_CLASS_NAME" value="com.MyProject.runners.TestRunner" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -194,16 +156,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="TestNG" temporary="true">
+      <module name="Cucumber" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.MyProject.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.MyProject.runners" />
+      <option name="MAIN_CLASS_NAME" value="com.MyProject.runners.TestRunner" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.ReverseArray" />
       <item itemvalue="Application.RotateArray" />
       <item itemvalue="TestNG.PlaywrightTestRunner" />
-      <item itemvalue="TestNG.TestRunner (1)" />
       <item itemvalue="TestNG.TestRunner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestRunner (1)" />
+        <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="TestNG.PlaywrightTestRunner" />
         <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="TestNG.TestRunner" />
