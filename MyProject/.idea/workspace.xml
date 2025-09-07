@@ -5,50 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73d035b-e5ee-4a99-90e7-e652e38954f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_klov_reporter_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_madgag_animated_gif_lib_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_erichseifert_vectorgraphics2d_VectorGraphics2D_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_rototor_pdfbox_graphics2d_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_fontbox_2_0_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_pdfbox_2_0_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_knowm_xchart_xchart_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tech_grasshopper_cucumber_pdf_report_2_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tech_grasshopper_extent_excel_report_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tech_grasshopper_extent_pdf_report_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tech_grasshopper_extentreports_cucumber7_adapter_1_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tech_grasshopper_htmlextentreporter_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tech_grasshopper_rest_assured_cucumber_pdf_report_1_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tech_grasshopper_table_layout_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/ConfigManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/ExtentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/ExtentTestManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/PlaywrightUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/SeleniumUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/WaitUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/ScreenshotUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cucumber.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cucumber.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/PlaywrightFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/PlaywrightFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/SeleniumHooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/ExtentTestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/ExtentTestManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/PlaywrightHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/PlaywrightHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyProject/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/runners/SeleniumTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyProject/stepDefinitions/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/stepDefinitions/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/CBIC_new_UI.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/CreateSubmissions.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/NewAutoRenewalChanges.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/ProductionTickets.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/StarrUIscenarios.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/WorkersComHappyFlow_Production.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/WorkersComHappyFlow_Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/WorkersComNew.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/brokerFeeScenarios.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/clearSpring_GL_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/crossBrowser.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/SeleniumHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/SeleniumHooks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Aravind/Education/Maske/LegacyApplication",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Aravind/Education/Maske/LegacyApplication&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Aravind\Git\BDDCucumberProject\MyProject\src\test\java\com\MyProject" />
@@ -231,6 +193,7 @@
     <list>
       <item itemvalue="Application.ReverseArray" />
       <item itemvalue="Application.RotateArray" />
+      <item itemvalue="TestNG.TestRunner" />
       <item itemvalue="TestNG.PlaywrightTestRunner" />
       <item itemvalue="TestNG.SeleniumTestRunner" />
     </list>
