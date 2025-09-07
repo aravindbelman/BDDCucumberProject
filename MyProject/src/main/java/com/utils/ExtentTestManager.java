@@ -8,9 +8,16 @@ import java.util.Map;
 
 public class ExtentTestManager {
     private static Map<Long, ExtentTest> extentTestMap = new HashMap<>();
-    private static ExtentReports extent = ExtentManager.getInstance();
+    private static Map<Long, ExtentReports> extentMap = new HashMap<>();
 
     public static synchronized ExtentTest startTest(String testName, String desc) {
+        // Create new report for this scenario
+        ExtentReports extent = ExtentManager.createInstance(testName);
+
+        // Store extent instance for this thread
+        extentMap.put(Thread.currentThread().getId(), extent);
+
+        // Create test node
         ExtentTest test = extent.createTest(testName, desc);
         extentTestMap.put(Thread.currentThread().getId(), test);
         return test;
@@ -21,6 +28,9 @@ public class ExtentTestManager {
     }
 
     public static synchronized void endTest() {
-        extent.flush();
+        ExtentReports extent = extentMap.get(Thread.currentThread().getId());
+        if (extent != null) {
+            extent.flush();
+        }
     }
 }
