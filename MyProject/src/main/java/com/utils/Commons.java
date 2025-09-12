@@ -65,7 +65,7 @@ public class Commons {
         }
     }
 
-    public String compareActualValues(String actual, String expected, String field, String tableName) throws Exception {
+    public String comparetwoValues(String actual, String expected, String field, String tableName) throws Exception {
         if (expected != null) {
             expected = expected.trim().replaceAll("\\s+", " ");
             if (actual != null) {
