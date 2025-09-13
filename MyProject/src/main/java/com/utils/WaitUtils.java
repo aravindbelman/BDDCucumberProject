@@ -1,6 +1,8 @@
 package com.utils;
 
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitForSelectorState;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -43,6 +45,14 @@ public class WaitUtils {
     public static void waitForSelector(Page page, String selector, int timeoutSeconds) {
         page.waitForSelector(selector, new Page.WaitForSelectorOptions()
                 .setTimeout(timeoutSeconds * 1000));
+    }
+
+    public void waitForElementVisible(Locator element, int timeoutInMs) {
+        element.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE).setTimeout(timeoutInMs));
+    }
+
+    public void waitForElementHidden(Locator element, int timeoutInMs) {
+        element.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.HIDDEN).setTimeout(timeoutInMs));
     }
 
 }
