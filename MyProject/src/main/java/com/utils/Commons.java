@@ -1,9 +1,7 @@
 package com.utils;
 
-import org.apache.commons.configuration2.PropertiesConfiguration;
-import org.apache.commons.configuration2.PropertiesConfigurationLayout;
+import org.apache.commons.configuration2.*;
 import org.apache.commons.configuration2.ex.ConfigurationException;
-
 import java.io.*;
 import java.text.DateFormat;
 import java.text.ParseException;
