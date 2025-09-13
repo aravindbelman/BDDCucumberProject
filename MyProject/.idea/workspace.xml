@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73d035b-e5ee-4a99-90e7-e652e38954f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/utils/ScreenshotUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/ExtentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/ExtentTestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/ExtentTestManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/PlaywrightHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/PlaywrightHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/SeleniumHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyProject/hooks/SeleniumHooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cucumber.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cucumber.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
