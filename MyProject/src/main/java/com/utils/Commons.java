@@ -1,9 +1,7 @@
 package com.utils;
 
-import org.apache.commons.configuration2.PropertiesConfiguration;
-import org.apache.commons.configuration2.PropertiesConfigurationLayout;
+import org.apache.commons.configuration2.*;
 import org.apache.commons.configuration2.ex.ConfigurationException;
-
 import java.io.*;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -65,7 +63,7 @@ public class Commons {
         }
     }
 
-    public String compareActualValues(String actual, String expected, String field, String tableName) throws Exception {
+    public String comparetwoValues(String actual, String expected, String field, String tableName) throws Exception {
         if (expected != null) {
             expected = expected.trim().replaceAll("\\s+", " ");
             if (actual != null) {

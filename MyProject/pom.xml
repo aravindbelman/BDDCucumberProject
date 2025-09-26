@@ -144,6 +144,11 @@
 			<version>3.13.0</version>
 			<type>maven-plugin</type>
 		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.7</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

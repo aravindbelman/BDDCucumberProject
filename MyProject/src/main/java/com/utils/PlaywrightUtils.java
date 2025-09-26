@@ -2,9 +2,8 @@ package com.utils;
 
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.SelectOption;
-
 import java.nio.file.Paths;
-import java.util.List;
+
 
 public class PlaywrightUtils {
 
@@ -20,12 +19,15 @@ public class PlaywrightUtils {
     }
 
     public void type(Locator element, String text) {
-        element.fill("");  // clear
-        element.type(text);
+        element.fill(text);  // clear
     }
 
     public String getText(Locator element) {
         return element.innerText();
+    }
+
+    public String getTextContent(Locator element) {
+        return element.textContent();
     }
 
     public boolean isDisplayed(Locator element) {
@@ -51,6 +53,10 @@ public class PlaywrightUtils {
 
     public void selectByVisibleText(Locator dropdown, String text) {
         dropdown.selectOption(new SelectOption().setLabel(text));
+    }
+    public void clickWithLog(Locator element, String elementName) {
+        System.out.println("Clicking on: " + elementName);
+        element.click();
     }
 
     // ====== Frames ======
@@ -99,6 +105,26 @@ public class PlaywrightUtils {
             }
         });
     }
+    public void dragAndDrop(Locator source, Locator target) {
+        source.dragTo(target);
+    }
+    public void retryClick(Locator element, int maxRetries) {
+        int attempts = 0;
+        while (attempts < maxRetries) {
+            try {
+                element.click();
+                break;
+            } catch (PlaywrightException e) {
+                attempts++;
+                if (attempts == maxRetries) throw e;
+            }
+        }
+    }
+
+    public void downloadFile(Locator downloadButton, String savePath) {
+        Download download = page.waitForDownload(() -> downloadButton.click());
+        download.saveAs(Paths.get(savePath));
+    }
 
     // ====== Keyboard & Mouse ======
     public void pressKey(String key) {
@@ -136,5 +162,20 @@ public class PlaywrightUtils {
 
     public void navigateTo(String url) {
         page.navigate(url);
+    }
+
+    public Object evaluateJS(String script) {
+        return page.evaluate(script);
+    }
+    public boolean verifyTextEquals(Locator element, String expected) {
+        return element.innerText().equals(expected);
+    }
+
+    public void highlightElement(Locator element) {
+        page.evaluate("element => element.style.border='3px solid red'", element);
+    }
+
+    public void clearCookies() {
+        page.context().clearCookies();
     }
 }
